@@ -363,7 +363,7 @@ header {
     /* Para la línea conectora */
 }
 
-/* Línea conectora visual (Ondulada SVG) */
+/* Línea conectora visual (Ondulada SVG Animada) */
 .features-grid::before {
     content: '';
     position: absolute;
@@ -376,7 +376,7 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 0;
     pointer-events: none;
 }
@@ -385,6 +385,16 @@ header {
     .features-grid::before {
         display: none;
         /* Ocultar en móvil */
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -465,21 +475,22 @@ header {
     transition: transform 0.5s ease;
 }
 
-/* Brillo detras del icono (GLOW MEJORADO) */
+/* Brillo detras del icono (GLOW INTENSO) */
 .card-icon-glass::after {
     content: '';
     position: absolute;
-    width: 120%;
-    /* Más grande que el icono */
-    height: 120%;
-    background: radial-gradient(circle, rgba(6, 45, 146, 0.25) 0%, rgba(212, 175, 55, 0.05) 50%, transparent 70%);
+    width: 72%;
+    /* Más grande */
+    height: 72%;
+    /* Colores mucho más fuertes: Azul 0.6, Dorado 0.3 */
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.7) 0%, rgba(212, 175, 55, 0.3) 40%, transparent 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    filter: blur(25px);
+    filter: blur(35px);
+    /* Más difuminado para suavizar la intensidad */
     opacity: 1;
-    /* Siempre visible */
     transition: all 0.5s ease;
 }
 
@@ -489,7 +500,12 @@ header {
 
 .feature-card:hover .card-icon-glass::after {
     opacity: 1;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%);
+    /* Hover explosivo dorado */
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.7) 0%, rgba(253, 202, 37, 0.3) 30%, transparent 70%);
+    width: 170%;
+    /* Crece un poco más al hover */
+    height: 170%;
+    filter: blur(30px);
 }
 
 .feature-card h3 {
