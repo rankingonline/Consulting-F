@@ -2,14 +2,14 @@
 :root {
     --primary: #062D92;
     --primary-rgb: 6, 45, 146;
-    --secondary: #FBCA98;
-    --secondary-rgb: 251, 202, 152;
-    --dark: #24324F;
-    --dark-rgb: 36, 50, 79;
-    --light: #E3DDCE;
+    --secondary: #D4AF37;
+    --secondary-rgb: 212, 175, 55;
+    --dark: #0F172A;
+    --dark-rgb: 15, 23, 42;
+    --light: #F1F5F9;
     --white: #FFFFFF;
-    --text-dark: #1a1a1a;
-    --text-light: #f5f5f5;
+    --text-dark: #1E293B;
+    --text-light: #F8FAFC;
 
     /* Glassmorphism Variables */
     --glass-bg: rgba(255, 255, 255, 0.7);
@@ -17,7 +17,7 @@
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
     --glass-blur: blur(12px);
 
-    --glass-dark-bg: rgba(36, 50, 79, 0.85);
+    --glass-dark-bg: rgba(15, 23, 42, 0.85);
     --glass-dark-border: 1px solid rgba(255, 255, 255, 0.1);
 
     --radius: 16px;
@@ -39,8 +39,8 @@ body {
     /* Dynamic Mesh Gradient Background to show off Glassmorphism */
     background:
         radial-gradient(circle at 10% 20%, rgba(6, 45, 146, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(251, 202, 152, 0.3) 0%, transparent 40%),
-        radial-gradient(circle at 50% 50%, rgba(227, 221, 206, 0.4) 0%, transparent 60%),
+        radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(241, 245, 249, 0.4) 0%, transparent 60%),
         #f8f9fa;
     background-attachment: fixed;
     /* Parallax-like feel */
@@ -304,58 +304,123 @@ header {
 .value-prop {
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    /* Contain blobs */
+}
+
+/* Decorative background for Value Prop */
+.value-prop::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+    z-index: -1;
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .value-prop h2 {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 1.5rem;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .value-prop>p {
     text-align: center;
     max-width: 700px;
-    margin: 0 auto 3.5rem;
-    color: #666;
-    font-size: 1.1rem;
+    margin: 0 auto 4rem;
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
+    padding: 1rem;
 }
 
 .feature-card {
-    /* Glass Effect applied here via generic class or specific styles */
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 2.5rem;
-    border-radius: var(--radius);
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    transition: 0.4s;
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 15px 30px rgba(6, 45, 146, 0.1);
-    border-color: var(--secondary);
+    transform: translateY(-15px);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 20px 40px rgba(6, 45, 146, 0.15);
+    border-color: var(--white);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(6, 45, 146, 0.1), rgba(212, 175, 55, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: 0.4s;
+    color: var(--primary);
+    font-size: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.feature-card:hover .card-icon {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(6, 45, 146, 0.2);
 }
 
 .feature-card h3 {
     margin-bottom: 1rem;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-top: 0.5rem;
 }
 
-.feature-card i {
-    color: var(--secondary);
-    font-size: 1.2em;
+.feature-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Social Proof */
