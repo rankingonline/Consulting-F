@@ -1,52 +1,54 @@
-# Consulting F - Propuesta de Web Corporativa
+# Consulting F - Web Corporativa Premium
 
-Este repositorio contiene la propuesta de diseño y desarrollo web para **Consulting F**, una asesoría en Madrid que combina profesionalidad tradicional con herramientas digitales modernas.
+Este repositorio contiene la versión final de la propuesta de diseño y desarrollo web para **Consulting F**. El proyecto ha evolucionado hacia una estética **"Premium Corporate"** que combina la seriedad de una asesoría fiscal/legal con la modernidad de las startup tecnológicas.
 
-## 🎨 Diseño y Estética
-La web ha sido diseñada siguiendo un estilo **Glassmorphism** (Vidrio Esmerilado), que aporta modernidad, profundidad y limpieza visual, alineándose con la petición de una imagen tecnológica pero humana.
+## 🎨 Estilo y Diseño: "Glassmorphism Ejecutivo"
+
+La web utiliza una técnica avanzada de **Glassmorphism** enriquecida con animaciones sutiles y una paleta de colores de alto contraste para denotar exclusividad.
 
 ### Paleta de Colores
-- **Primary (Azul Oscuro):** `#062D92` - Confianza, profesionalidad, seriedad.
-- **Secondary (Naranja Suave):** `#FBCA98` - Cercanía, calidez, acento humano.
-- **Dark (Azul Noche):** `#24324F` - Elegancia, contraste para textos.
-- **Light (Crema/Beige):** `#E3DDCE` - Fondo suave, calidez.
+- **Primary (Royal Blue):** `#062D92` - Color principal, autoridad y confianza.
+- **Secondary (Premium Gold):** `#D4AF37` (Aprox) - Detalles, iconos y acentos premium.
+- **Dark (Deep Navy):** `#021a53` - Fondos de secciones CTA y Footer.
+- **Glass White:** `rgba(255, 255, 255, 0.7)` - Paneles y tarjetas.
 
-## 🚀 Estructura del Proyecto
+## 🏗️ Estructura de Secciones (Versión Final)
+
+1.  **Hero Section**: Diseño limpio con imagen/video de fondo y panel de vidrio.
+2.  **Social Proof Marquee**: Carrusel infinito de marcas tecnológicas (efecto desplazamiento continuo).
+3.  **Problem / Solution**: Diseño "Split" (Dos Columnas) contrastando los problemas del cliente vs la solución integral.
+4.  **Beneficios (Horizontal Cards)**: Lista de ventajas con diseño de tarjeta horizontal para fácil lectura.
+5.  **Contacto (Split Form)**: Formulario elegante con panel informativo en azul corporativo.
+6.  **Testimonios (Google Style)**: Tarjetas diseñadas imitando las reseñas de Google para maximizar la credibilidad.
+7.  **Final CTA (Aurora Effect)**: Tarjeta de cierre con fondo animado de orbes difuminados y características visuales tipo "píldora".
+8.  **FAQ**: Acordeón de preguntas frecuentes estilizado y limpio.
+9.  **Footer Premium**: Pie de página con fondo degradado corporativo y tipografía jerarquizada.
+
+## 🚀 Tecnologías y Efectos Clave
+
+-   **HTML5 / CSS3 / JS Vanilla**: Sin dependencias ni frameworks pesados.
+-   **CSS Animations**:
+    -   `Aurora Effect`: Orbes de luz difuminados moviéndose en el background del CTA.
+    -   `Infinite Marquee`: Desplazamiento continuo de logos.
+    -   `Hover Effects`: Elevaciones y sombras dinámicas en tarjetas.
+-   **Responsive Design**: Adaptación fluida a móviles (Grid a una columna, menús adaptados).
+
+## 🛠️ Archivos del Proyecto
 
 ```
 /Consulting-F
 │
-├── index.html        # Estructura principal de la web
-├── styles.css        # Estilos globales, variables y tema Glassmorphism
-├── script.js         # Lógica para menú, acordeón FAQ y scroll suave
-├── copy.json         # (Referencia) Textos originales proporcionados
-├── README.md         # Documentación del proyecto
-└── assets/           # Imágenes y recursos gráficos
-    ├── hero-image.png    # Imagen generada para el Hero
-    └── meeting-image.png # Imagen generada para Metodología
+├── index.html        # Estructura semántica completa
+├── styles.css        # Hoja de estilos (Variables, Animaciones, Media Queries)
+├── script.js         # Lógica de contadores, observadores y FAQ
+└── assets/           # Recursos gráficos (imágenes, SVGs)
 ```
 
-## 🛠️ Tecnologías
-- **HTML5 Semántico**: Estructura limpia y accesible.
-- **CSS3 (Vanilla)**: Sin frameworks pesados. Uso extensivo de:
-  - `backdrop-filter: blur()` para efectos de vidrio.
-  - Variables CSS (`:root`) para fácil mantenimiento de colores.
-  - Flexbox y Grid para maquetación responsiva.
-- **JavaScript (Vanilla)**: Interactividad ligera sin dependencias.
+## 📝 Notas para Implementación
 
-## 📦 Cómo visualizar
-Simplemente abre el archivo `index.html` en tu navegador web preferido (Chrome, Firefox, Safari, Edge).
+Esta plantilla está optimizada para ser portada a sistemas como **WordPress + Elementor** o desarrollos a medida.
+-   **Iconos**: Se utiliza FontAwesome para la iconografía.
+-   **Fuentes**: Familia `Inter` y `Outfit` (Google Fonts).
 
-## 📝 Notas de Migración a Elementor
-El código está estructurado para facilitar su paso a WordPress + Elementor:
-1. **Colores:** Configura los colores globales de Elementor con los códigos hexadecimales de arriba.
-2. **Tipografía:** Usa 'Outfit' para encabezados y 'Inter' para cuerpo.
-3. **Efecto Glass:** En Elementor, puedes lograr el efecto añadiendo este CSS personalizado a las secciones o columnas:
-   ```css
-   selector {
-       background: rgba(255, 255, 255, 0.7);
-       backdrop-filter: blur(12px);
-       border: 1px solid rgba(255, 255, 255, 0.5);
-       border-radius: 16px;
-   }
-   ```
+---
+*Desarrollado para Consulting F - 2024*
