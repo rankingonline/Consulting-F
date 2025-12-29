@@ -521,30 +521,66 @@ header {
     line-height: 1.6;
 }
 
-/* Social Proof */
-.social-proof {
-    /* Subtle glass strip */
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(5px);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-    padding: 60px 0;
+/* Social Proof Strip (Infinite Marquee) */
+.social-marquee {
+    background: var(--secondary);
+    /* Fondo Dorado */
+    padding: 0.8rem 0;
+    /* Más delgada */
+    overflow: hidden;
+    /* Ocultar lo que se sale */
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    /* Sombra más sutil */
+    z-index: 10;
 }
 
-.logos-placeholder {
-    display: flex;
-    justify-content: center;
+.marquee-track {
+    display: inline-flex;
     gap: 4rem;
-    flex-wrap: wrap;
-    opacity: 0.5;
-    margin-top: 2rem;
-    font-family: var(--font-heading);
+    animation: scroll 20s linear infinite;
+    /* Movimiento perpetuo */
 }
 
-.logos-placeholder .logo-mock {
+/* Animación de desplazamiento infinito */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* Mueve la mitad (el set original) */
+}
+
+.brand-item {
+    font-size: 1.3rem;
+    /* Texto más pequeño */
+    font-weight: 800;
+    color: var(--primary);
+    /* Azul sobre Dorado */
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-heading);
+    opacity: 0.85;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.brand-item i {
     font-size: 1.5rem;
-    font-weight: 700;
+    /* Icono más pequeño */
+}
+
+.brand-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Pain Points - Dark Glass */
