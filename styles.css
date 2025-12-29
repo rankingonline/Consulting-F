@@ -60,6 +60,13 @@ h6 {
     color: var(--primary);
 }
 
+strong,
+b {
+    font-weight: 700;
+    color: var(--primary);
+    /* Opcional: darle un toque de color, o dejar inherit */
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -279,6 +286,11 @@ header {
     font-weight: 300;
 }
 
+.hero-text strong {
+    color: var(--white);
+    font-weight: 700;
+}
+
 /* Specific button adjustments for Hero */
 .hero .btn-primary {
     background: var(--secondary);
@@ -324,19 +336,19 @@ header {
 }
 
 .value-prop h2 {
-    text-align: center;
+    text-align: center !important;
     max-width: 800px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1.5rem !important;
     font-size: 2.8rem;
     background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.value-prop>p {
-    text-align: center;
+.value-prop p {
+    text-align: center !important;
     max-width: 700px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 4rem !important;
     color: #555;
     font-size: 1.2rem;
     font-weight: 300;
@@ -347,67 +359,137 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     padding: 1rem;
+    position: relative;
+    /* Para la línea conectora */
+}
+
+/* Línea conectora visual (Ondulada SVG) */
+.features-grid::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 70%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-image: url('./assets/wave-connector.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 900px) {
+    .features-grid::before {
+        display: none;
+        /* Ocultar en móvil */
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    padding: 3rem 2rem;
-    border-radius: 24px;
-    transition: all 0.4s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    background: transparent;
+    /* Fondo transparente */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    /* Sin borde */
+    padding: 1.5rem;
+    /* Menos padding */
+    border-radius: 0;
+    box-shadow: none;
+    /* Sin sombra de caja */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    /* Permitir que elementos sobresalgan */
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 .feature-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-    opacity: 0;
-    transition: 0.4s;
+    display: none;
+    /* Eliminar el efecto de brillo anterior */
 }
 
 .feature-card:hover {
-    transform: translateY(-15px);
-    background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 20px 40px rgba(6, 45, 146, 0.15);
-    border-color: var(--white);
+    transform: translateY(-5px);
+    /* Movimiento sutil */
+    background: transparent;
+    box-shadow: none;
+    border-color: transparent;
 }
 
-.feature-card:hover::before {
-    opacity: 1;
-}
-
+/* Antiguo .card-icon (Deprecado/Compatibilidad) */
 .card-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(6, 45, 146, 0.1), rgba(212, 175, 55, 0.3));
+    display: none;
+}
+
+/* Nuevo estilo para iconos 3D Glass */
+.card-icon-glass {
+    width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
-    transition: 0.4s;
-    color: var(--primary);
-    font-size: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.5rem;
+    /* Reducido de 2rem para juntarlo más */
+    position: relative;
+    z-index: 2;
+    animation: float 6s ease-in-out infinite;
 }
 
-.feature-card:hover .card-icon {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--white);
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 10px 20px rgba(6, 45, 146, 0.2);
+.card-icon-glass img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 25px rgba(6, 45, 146, 0.15));
+    transition: transform 0.5s ease;
+}
+
+/* Brillo detras del icono (GLOW MEJORADO) */
+.card-icon-glass::after {
+    content: '';
+    position: absolute;
+    width: 120%;
+    /* Más grande que el icono */
+    height: 120%;
+    background: radial-gradient(circle, rgba(6, 45, 146, 0.25) 0%, rgba(212, 175, 55, 0.05) 50%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: blur(25px);
+    opacity: 1;
+    /* Siempre visible */
+    transition: all 0.5s ease;
+}
+
+.feature-card:hover .card-icon-glass img {
+    transform: scale(1.1);
+}
+
+.feature-card:hover .card-icon-glass::after {
+    opacity: 1;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%);
 }
 
 .feature-card h3 {
