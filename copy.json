@@ -1,0 +1,121 @@
+{
+    "page_meta": {
+        "title": "Propuesta de Home - Consulting F",
+        "description": "Propuesta de contenidos para la página de inicio de Consulting F"
+    },
+    "sections": {
+        "hero": {
+            "h1": "Asesoría en Madrid que responde, te explica y te acompaña",
+            "subtitle": "Lo urgente no deja espacio para lo importante.",
+            "description": "Si estás cansado de resolver sobre la marcha, sin claridad ni apoyo real, en Consulting F te ayudamos a ordenar tus áreas fiscal, laboral y contable con nuestra Asesoría en Madrid: revisiones periódicas, contacto directo y soluciones pensadas para tu tipo de empresa.",
+            "cta_button": {
+                "text": "Agenda tu reunión inicial con nuestro despacho",
+                "action": "scroll_to_contact"
+            },
+            "image_placeholder": "Espacio para imagen profesional del equipo o imagen conceptual de empresa actualizada"
+        },
+        "value_proposition": {
+            "h2": "Asesoría en Madrid para empresas que quieren llevar el control con tranquilidad",
+            "description": "No nos limitamos a cumplir con las obligaciones, sino que acompañamos de forma cercana en la toma de decisiones. Comprendemos cómo funciona tu empresa, sus tiempos, sus procesos y también sus dudas.",
+            "features": [
+                "Acompañamiento regular y contacto directo",
+                "Análisis adaptado a tu negocio",
+                "Clientes en Madrid y otras provincias que siguen con nosotros a lo largo de los años"
+            ]
+        },
+        "social_proof_logos": {
+            "h2": "Empresas que ya trabajan con nosotros",
+            "description": "Negocios de diferentes sectores eligen Consulting F por nuestra forma de trabajar: con compromiso, dedicación y claridad.",
+            "image_placeholder": "Espacio para logos de empresas reales o sectores representativos"
+        },
+        "pain_points": {
+            "h2": "¿Te suena alguno de estos escenarios?",
+            "items": [
+                "No tienes seguridad sobre los números reales de tu empresa",
+                "Sientes que todo depende de ti y no sabes a quién consultar",
+                "Tu asesor actual no te explica, solo presenta declaraciones",
+                "Te preocupa cometer errores por falta de tiempo o de conocimiento"
+            ]
+        },
+        "methodology": {
+            "h2": "Así trabajamos contigo",
+            "intro_text": "En Consulting F creemos que cada empresa necesita una relación directa con su asesor. Por eso nos centramos en entender cómo trabajas y qué necesitas, para que cada decisión tenga un sentido claro.",
+            "items": [
+                "Explicaciones sencillas y trato directo",
+                "Cierres mensuales, pre-cierres y simulaciones anuales",
+                "Asesoramiento contable, fiscal y laboral adaptado a la realidad de tu empresa",
+                "Servicio jurídico como respaldo"
+            ]
+        },
+        "interim_cta_form": {
+            "h2": "¿Necesitas hablar con alguien que entienda tu negocio sin darte vueltas?",
+            "element": "Formulario de contacto"
+        },
+        "benefits_transformation": {
+            "h2": "Lo que cambia cuando trabajas con nosotros",
+            "intro_text": "Trabajar con una asesoría no debería ser una carga más. Nuestro objetivo es que sientas que tienes un equipo que te da estructura, respuestas y tranquilidad, sin tener que recordárselo cada semana.",
+            "benefit_blocks": [
+                {
+                    "title": "Siempre sabes en qué punto estás",
+                    "description": "No esperamos al cierre para revisar tu situación. Te damos visibilidad continua sobre tus cifras, tus compromisos y tus decisiones pendientes. Todo está ordenado y explicado para que puedas actuar con tiempo."
+                },
+                {
+                    "title": "No trabajas a ciegas",
+                    "description": "Cuando algo cambia: una ley, una obligación, una oportunidad. Te lo contamos antes de que tengas que preguntarlo. Sabemos que lo difícil no es hacer trámites, sino saber qué hacer con la información."
+                },
+                {
+                    "title": "Te damos herramientas, pero no te soltamos la mano",
+                    "description": "Sí, usamos tecnología. Pero lo importante es cómo la usamos contigo. Te enseñamos lo justo, te damos materiales cuando hace falta y no dejamos que te ahogues en plataformas si solo querías una respuesta."
+                }
+            ],
+            "cta_button": {
+                "text": "Quiero que mi empresa funcione con orden y respaldo",
+                "link": "/contacto"
+            }
+        },
+        "testimonials": {
+            "h2": "Lo que dicen de nosotros",
+            "element": "Widget de testimonios de Google"
+        },
+        "location": {
+            "h2": "¿En qué lugar de Madrid puedes encontrarnos?",
+            "description": "Estamos en Madrid, en el barrio de Tetuán. Nuestro despacho está preparado para recibirte si prefieres una reunión presencial, o también trabajamos con empresas en otras provincias de forma 100% digital.",
+            "address": "Av. del General Perón, 16, Tetuán, 28020 Madrid, España",
+            "phone": "+34 915 36 02 68",
+            "map_placeholder": "Incrustar mapa de Google con marcador en la dirección"
+        },
+        "final_cta": {
+            "h2": "Trabajamos con empresas que buscan confianza y continuidad",
+            "description": "Nuestro despacho está preparado para ofrecerte una relación profesional, directa y con seguimiento real. Si quieres entender mejor tu situación contable y fiscal, resolver dudas laborales o tener un respaldo jurídico, podemos ayudarte con nuestra asesoría en Madrid desde el primer mes.",
+            "cta_button": {
+                "text": "Agenda tu primera reunión con nuestro despacho",
+                "link": "/contacto"
+            }
+        },
+        "faq": {
+            "h2": "Preguntas frecuentes sobre nuestra asesoría en Madrid",
+            "questions": [
+                {
+                    "question": "¿Con qué tipo de empresas trabajáis?",
+                    "answer": "Principalmente con pymes y empresas que valoran tener todo en orden, entienden la importancia de un seguimiento continuo y desean una relación estable con su asesor."
+                },
+                {
+                    "question": "¿Ofrecéis asesoramiento jurídico dentro del servicio?",
+                    "answer": "Contamos con apoyo jurídico orientado a temas empresariales, especialmente mercantil y laboral. Esto permite resolver situaciones legales sin necesidad de contratar servicios adicionales."
+                },
+                {
+                    "question": "¿Puedo trabajar con vosotros si estoy fuera de Madrid?",
+                    "answer": "Claro. Aunque nuestra oficina está en Madrid, tenemos clientes en otras provincias. Trabajamos con plataformas digitales y con una comunicación fluida para ofrecer el mismo trato cercano."
+                },
+                {
+                    "question": "¿Qué pasa si mi empresa tiene varias áreas y necesita un enfoque más completo?",
+                    "answer": "Lo primero que hacemos es entender cómo está organizada tu empresa y qué necesidades tiene cada parte. No todos los clientes entran con el mismo esquema. A veces hace falta coordinar con tu responsable financiero, otras con recursos humanos o el área administrativa. Lo importante es que nos integramos a tu manera de trabajar y damos seguimiento real, no genérico."
+                },
+                {
+                    "question": "¿Qué os diferencia de otras asesorías tradicionales?",
+                    "answer": "Lo que más valoran nuestros clientes es que no trabajamos con respuestas estándar ni desaparecemos después de presentar un modelo. Somos accesibles, respondemos rápido y conocemos bien a cada empresa. Además, explicamos todo sin tecnicismos y te damos una visión ordenada de tus números para que tomes decisiones con criterio."
+                }
+            ]
+        }
+    }
+}
