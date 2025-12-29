@@ -200,16 +200,89 @@
         </div>
     </section>
 
-    <!-- Interim CTA -->
-    <section class="section-padding interim-cta">
+    <!-- Contact Split Section -->
+    <section class="section-padding contact-section" id="contacto">
         <div class="container">
-            <div class="interim-cta-box">
-                <h2>¿Necesitas hablar con alguien que entienda tu negocio?</h2>
-                <form
-                    style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
-                    <a href="#contacto" class="btn btn-secondary">Contactar ahora</a>
-                </form>
+
+            <div class="contact-split-card">
+
+                <!-- Panel Izquierdo: Info & Mapa (Fondo Azul) -->
+                <div class="contact-info-panel">
+                    <div class="info-content">
+                        <h3>Información de Contacto</h3>
+                        <p class="info-desc">Estamos aquí para ayudarte a optimizar tu negocio. Visítanos o escríbenos.
+                        </p>
+
+                        <!-- Mapa Visual -->
+                        <div class="map-card-visual">
+                            <div class="map-placeholder-img">
+                                <i class="fa-solid fa-location-dot map-pin"></i>
+                                <!-- Simulamos imagen de mapa con CSS -->
+                            </div>
+                            <div class="map-address-box">
+                                <strong>Consulting F</strong>
+                                <span>Calle Ejemplo 123, Madrid</span>
+                            </div>
+                        </div>
+
+                        <!-- Datos de Contacto -->
+                        <div class="contact-details-list">
+                            <div class="cd-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Paseo de la Castellana 200, Madrid</span>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+34 91 123 45 67</span>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>hola@consultingf.com</span>
+                            </div>
+                        </div>
+
+                        <!-- Socials -->
+                        <div class="social-row-contact">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel Derecho: Formulario (Fondo Blanco) -->
+                <div class="contact-form-panel">
+                    <h2>Contáctanos</h2>
+
+                    <form class="clean-form">
+                        <div class="form-group-line">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+
+                        <div class="form-group-line">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group-bg">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" id="newsletter">
+                            <label for="newsletter">Me gustaría recibir novedades sobre fiscalidad.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary btn-wide">
+                            Enviar formulario
+                        </button>
+                    </form>
+                </div>
+
             </div>
+
         </div>
     </section>
 
