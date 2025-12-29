@@ -966,38 +966,159 @@ header {
 }
 
 /* Benefits Transformation */
+/* --- Benefits Steps & Progress (Reconstrucción) --- */
 .benefits {
-    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: #fdfdfd;
 }
 
-.benefit-cards {
+.benefits-title-lg {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 4rem;
+    font-weight: 800;
+}
+
+/* Grid Relativo */
+.steps-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
-    margin-top: 4rem;
-}
-
-.benefit-card {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 3rem;
-    border-radius: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     position: relative;
-    overflow: hidden;
-    transition: 0.4s;
+    /* Contexto para la barra */
+    padding-top: 3rem;
+    /* Espacio superior para los marcadores */
+    margin-bottom: 3rem;
 }
 
-.benefit-card:hover {
+/* Barra de Progreso Absoluta */
+.steps-progress-wrapper-absolute {
+    position: absolute;
+    top: 5px;
+    /* Ajuste fino para centrar con los marcadores */
+    left: 16.666%;
+    /* Centro de la columna 1 */
+    right: 16.666%;
+    /* Centro de la columna 3 */
+    height: 4px;
+    background: #e5e7eb;
+    /* Track Gris */
+    z-index: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    /* Para contener el fill */
+    display: block;
+    /* Visible por defecto */
+}
+
+.progress-track-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--primary);
+    /* Fill Azul */
+    transition: width 0.5s ease;
+}
+
+/* Tarjetas */
+.benefit-card.step-card {
+    position: relative;
+    z-index: 1;
     background: #fff;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+
+    /* Estado Inactivo: Dorado Premium */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.05);
+    opacity: 0.8;
+}
+
+/* Marcadores Circulares */
+.step-marker {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid var(--secondary);
+    /* Dorado */
+    border-radius: 50%;
+
+    /* Centrado Flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--secondary);
+
+    /* Posición: Floatar arriba */
+    position: absolute;
+    top: -25px;
+    /* Mitad de su altura hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    /* Encima de la barra */
+
+    transition: 0.4s ease;
+}
+
+/* Contenido Card */
+.benefit-card h3 {
+    margin-top: 1.5rem;
+    /* Espacio tras el marcador */
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    transition: color 0.3s;
+}
+
+.benefit-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- Estado ACTIVO (Azul) --- */
+.benefit-card.step-card.active {
+    border-color: var(--primary);
+    box-shadow: 0 20px 50px rgba(6, 45, 146, 0.15);
+    opacity: 1;
     transform: translateY(-5px);
 }
 
-.benefit-card h3 {
+.benefit-card.step-card.active .step-marker {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    box-shadow: 0 0 0 6px rgba(6, 45, 146, 0.1);
+    /* Anillo externo */
+}
+
+.benefit-card.step-card.active h3 {
     color: var(--primary);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .steps-progress-wrapper-absolute {
+        display: none;
+        /* Ocultar barra en móvil */
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        /* Más espacio vertical */
+    }
+
+    .benefit-card.step-card {
+        opacity: 1;
+    }
 }
 
 /* --- Contact Section --- */
