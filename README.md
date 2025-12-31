@@ -7,9 +7,10 @@ Este repositorio contiene la versión final de la propuesta de diseño y desarro
 La web utiliza una técnica avanzada de **Glassmorphism** enriquecida con animaciones sutiles y una paleta de colores de alto contraste para denotar exclusividad.
 
 ### Paleta de Colores
-- **Primary (Royal Blue):** `#062D92` - Color principal, autoridad y confianza.
-- **Secondary (Premium Gold):** `#D4AF37` (Aprox) - Detalles, iconos y acentos premium.
-- **Dark (Deep Navy):** `#021a53` - Fondos de secciones CTA y Footer.
+- **Primary (Coral):** `#FFD38C` (200) - Color principal de marca. Usado en botones y acentos. `#A36500` (700) para textos.
+- **Secondary (Blue):** `#2596BE` (600) - Elementos secundarios, bordes glass y detalles fríos.
+- **Extra (Orange):** `#FF6B35` (400) - Acentos vibrantes y llamadas a la acción secundarias.
+- **Dark (Deep Navy/Black):** `#041115` (950) - Fondos profundos.
 - **Glass White:** `rgba(255, 255, 255, 0.7)` - Paneles y tarjetas.
 
 ## 🏗️ Estructura de Secciones (Versión Final)
