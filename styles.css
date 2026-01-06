@@ -1289,24 +1289,6 @@ header {
     }
 }
 
-.map-address-box {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    background: white;
-    padding: 10px 15px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    color: var(--dark);
-    font-size: 0.85rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.map-address-box strong {
-    color: var(--primary-600);
-}
-
 /* Lista de Contacto */
 .contact-details-list {
     display: flex;
