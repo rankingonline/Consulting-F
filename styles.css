@@ -230,7 +230,7 @@ header {
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -1638,13 +1638,14 @@ footer {
 }
 
 .footer-logo {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--white);
-    /* Primary Brand for Contrast on Dark */
-    margin-bottom: 1.5rem;
     display: inline-block;
-    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo-img {
+    height: 96px;
+    filter: brightness(0) invert(1);
+    display: block;
 }
 
 footer p {
