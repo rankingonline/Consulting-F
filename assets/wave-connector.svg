@@ -2,13 +2,13 @@
   <defs>
     <!-- 
       Gradiente con 'spreadMethod="repeat"'.
-      Definimos un ciclo corto del 0% al 50% del ancho (Azul -> Dorado -> Azul).
-      Al repetirse, cubre toda la línea. Animar el x1/x2 exactamente ese 50% crea un loop perfecto.
+      Definimos un ciclo corto del 0% al 50% del ancho (Azul Claro -> Azul Intenso -> Azul Claro).
+      Al repetirse, cubre toda la línea.
     -->
     <linearGradient id="flowGradient" x1="0%" y1="0%" x2="50%" y2="0%" spreadMethod="repeat">
-      <stop offset="0%" stop-color="rgba(6, 45, 146, 0.2)" />
-      <stop offset="50%" stop-color="#D4AF37" />
-      <stop offset="100%" stop-color="rgba(6, 45, 146, 0.2)" />
+      <stop offset="0%" stop-color="rgba(4, 18, 123, 0.1)" />
+      <stop offset="50%" stop-color="#3140B4" />
+      <stop offset="100%" stop-color="rgba(4, 18, 123, 0.1)" />
       
       <!-- Animamos desplazando exactamente un ciclo (50%) hacia la derecha -->
       <animate attributeName="x1" from="-50%" to="0%" dur="4s" repeatCount="indefinite" />
@@ -24,9 +24,6 @@
         
     <!-- 
       Animación de "hormiguitas".
-      Patrón total = 12 (dash) + 12 (gap) = 24.
-      480 es múltiplo exacto de 24 (24 * 20).
-      Esto garantiza que el punto final coincida exactamente con el inicial.
     -->
     <animate attributeName="stroke-dashoffset" from="480" to="0" dur="20s" repeatCount="indefinite" linear="true" />
   </path>

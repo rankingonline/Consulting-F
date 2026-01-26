@@ -323,37 +323,36 @@
     <!-- Location Highlight Section -->
     <section class="section-padding location-highlight">
         <div class="container">
-            <div class="glass-panel"
-                style="padding: 3rem; display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; border-radius: 24px; background: rgba(255, 255, 255, 0.7); border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);">
-                <div style="flex: 1 1 400px;">
-                    <h2 style="margin-bottom: 1.5rem; color: var(--primary-600); font-size: 2.5rem;">¿En qué lugar
-                        puedes encontrarnos?</h2>
-                    <p style="margin-bottom: 2rem; color: #555; font-size: 1.1rem; line-height: 1.6;">Estamos en Madrid,
-                        en el barrio de AZCA. Nuestro despacho está preparado para recibirte si prefieres una reunión
-                        presencial, o también trabajamos con empresas en otras provincias de forma 100% digital.</p>
+            <div class="glass-panel location-card">
+                <div class="location-text">
+                    <h2>¿En qué lugar puedes encontrarnos?</h2>
+                    <p>Estamos en Madrid, en el barrio de AZCA. Nuestro despacho está preparado para recibirte si
+                        prefieres una reunión presencial, o también trabajamos con empresas en otras provincias de forma
+                        100% digital.</p>
 
-                    <div class="contact-details-list" style="margin-bottom: 0;">
-                        <div class="cd-item"
-                            style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 1.1rem;">
-                            <i class="fa-solid fa-location-dot"
-                                style="color: var(--secondary-600); width: 30px; text-align: center; font-size: 1.2rem;"></i>
-                            <span>Av. del General Perón, 16, 28020 Madrid, España</span>
+                    <div class="contact-details-list location-details">
+                        <div class="cd-item highlight-item">
+                            <div class="icon-circle pulse-animation">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span class="text-dark">Av. del General Perón, 16, 28020 Madrid, España</span>
                         </div>
-                        <div class="cd-item" style="display: flex; align-items: center; gap: 1rem; font-size: 1.1rem;">
-                            <i class="fa-solid fa-phone"
-                                style="color: var(--secondary-600); width: 30px; text-align: center; font-size: 1.2rem;"></i>
-                            <span>+34 915 36 02 68</span>
+                        <div class="cd-item highlight-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span class="text-dark">+34 915 36 02 68</span>
                         </div>
                     </div>
                 </div>
 
-                <div
-                    style="flex: 1 1 400px; height: 400px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <div class="map-container-dynamic">
                     <iframe
                         src="https://maps.google.com/maps?q=Av.+del+General+Per%C3%B3n,+16,+Tetu%C3%A1n,+28020+Madrid,+Espa%C3%B1a&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
+                    <div class="map-overlay-shine"></div>
                 </div>
             </div>
         </div>
