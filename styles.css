@@ -443,6 +443,11 @@ header {
     .features-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Reduce spacing between paragraph and grid on mobile */
+    .value-prop p {
+        margin: 0 auto !important;
+    }
 }
 
 /* Línea conectora visual (Ondulada SVG Animada) */
@@ -864,13 +869,24 @@ header {
     .split-container {
         grid-template-columns: 1fr;
         /* Una columna */
-        gap: 3rem;
+        gap: 1rem;
     }
 
     .solution-connector {
         transform: rotate(90deg);
         /* Flecha hacia abajo */
         margin: 1rem 0;
+    }
+
+    .problem-side,
+    .solution-side {
+        padding: 1.5rem;
+    }
+
+    .problem-side h2,
+    .solution-side h2,
+    .solution-intro {
+        text-align: center;
     }
 
     @keyframes pulseArrow {
