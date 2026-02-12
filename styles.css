@@ -1229,6 +1229,10 @@ header {
     .benefit-card.step-card {
         opacity: 1;
     }
+
+    .benefits-title-lg {
+        margin-bottom: 1rem;
+    }
 }
 
 /* --- Contact Section --- */
@@ -1464,7 +1468,23 @@ header {
 
     .contact-info-panel,
     .contact-form-panel {
-        padding: 2.5rem;
+        padding: 2rem;
+    }
+
+    /* Center specific elements on mobile */
+    .contact-form-panel h2,
+    .contact-info-panel h3,
+    .contact-info-panel p {
+        text-align: center;
+    }
+
+    .contact-form-panel .btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 300px;
+        /* Optional: keep it nice looking */
     }
 }
 
@@ -1641,6 +1661,26 @@ header {
     transform: rotate(180deg);
 }
 
+/* Responsive FAQ */
+@media (max-width: 768px) {
+    .faq-question {
+        padding: 1.25rem 1rem;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 1rem 1.25rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .faq-question i {
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+}
+
 
 /* --- Footer Premium --- */
 /* --- Footer Premium --- */
@@ -1659,10 +1699,41 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    /* Logo más espacio */
-    gap: 4rem;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    /* 4 columns: Brand takes more space */
+    gap: 3rem;
     margin-bottom: 4rem;
+}
+
+.footer-brand p {
+    color: var(--primary-100);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 300px;
+}
+
+.social-links-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links-footer a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+.social-links-footer a:hover {
+    background: var(--white);
+    color: var(--secondary-900);
+    transform: translateY(-3px);
 }
 
 .footer-logo {
@@ -1671,16 +1742,10 @@ footer {
 }
 
 .footer-logo-img {
-    height: 96px;
+    height: 48px;
+    /* Slightly smaller for balance */
     filter: brightness(0) invert(1);
     display: block;
-}
-
-footer p {
-    color: var(--primary-100);
-    line-height: 1.6;
-    max-width: 300px;
-    font-size: 0.95rem;
 }
 
 .footer-links h4 {
@@ -1692,7 +1757,6 @@ footer p {
 
 .footer-links ul {
     list-style: none;
-    /* Asegurar reset */
     padding: 0;
 }
 
@@ -1704,31 +1768,33 @@ footer p {
     color: var(--primary-100);
     text-decoration: none;
     transition: 0.3s;
-    font-size: 1rem;
+    font-size: 0.95rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 .footer-links a:hover {
-    color: var(--primary);
+    color: var(--white);
     transform: translateX(5px);
-    /* Desplazamiento sutil */
 }
 
 .footer-contact-list li {
     display: flex;
     align-items: flex-start;
-    gap: 0.8rem;
+    gap: 1rem;
     margin-bottom: 1rem;
     color: var(--primary-100);
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
 }
 
 .footer-contact-list i {
     color: var(--white);
-    margin-top: 5px;
+    margin-top: 4px;
+    /* Align icon with first line */
+    min-width: 20px;
+    /* Prevent shrinking */
 }
 
 .footer-bottom {
@@ -1741,12 +1807,16 @@ footer p {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .footer-legal a {
     color: rgba(255, 255, 255, 0.5);
-    margin-left: 1.5rem;
     transition: 0.3s;
 }
 
@@ -1756,22 +1826,86 @@ footer p {
 
 /* Responsive Footer */
 @media (max-width: 900px) {
+    footer {
+        padding: 60px 0 40px;
+        margin-top: 4rem;
+        /* Less margin on mobile */
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        text-align: center;
+        /* Center everything on mobile */
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center brand elements */
+    }
+
+    .footer-brand p {
+        margin: 0 auto 1.5rem;
+        /* Center text block */
+    }
+
+    .social-links-footer {
+        justify-content: center;
+        /* Center social icons */
+    }
+
+    .footer-links h4 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center list items */
+    }
+
+    .footer-contact-list li {
+        justify-content: center;
+        /* Center contact items */
         text-align: center;
     }
 
-    footer p {
-        margin: 0 auto;
+    .footer-contact-list i {
+        display: none;
+        /* Often cleaner to hide icons in centered text lists on mobile, or keep them inline? Let's keep inline but handle alignment. */
+    }
+
+    /* Better approach for centered contact list with icons: keep icons but ensure flex center works */
+    .footer-contact-list li {
+        flex-direction: column;
+        /* Stack icon and text for better centering? Or just inline-block */
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer-contact-list i {
+        display: block;
+        /* Show icon */
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+        color: var(--primary-500);
+        /* Highlight icon */
     }
 
     .footer-bottom {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        /* Copyright at bottom */
+        gap: 1rem;
     }
 
-    .footer-legal a {
-        margin: 0 0.75rem;
+    .footer-legal {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -1939,7 +2073,7 @@ footer p {
 /* Responsive CTA */
 @media (max-width: 900px) {
     .final-cta-card {
-        padding: 2.5rem;
+        padding: 1.5rem;
     }
 
     .final-cta-card h2 {
@@ -1962,6 +2096,48 @@ footer p {
     box-shadow: 0 10px 40px rgba(4, 18, 123, 0.05);
     /* Subtle blue shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .glass-panel.location-card {
+        padding: 1.5rem !important;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .location-text {
+        display: contents;
+        /* Flattens the structure to allow reordering */
+        text-align: center;
+    }
+
+    .location-text h2,
+    .location-text p {
+        text-align: center !important;
+    }
+
+    .location-text h2 {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .location-text p {
+        order: 2;
+        margin-bottom: 2rem;
+    }
+
+    .map-container-dynamic {
+        order: 3;
+        width: 100%;
+        min-height: 250px;
+        margin-bottom: 2rem;
+    }
+
+    .contact-details-list.location-details {
+        order: 4;
+        width: 100%;
+    }
 }
 
 .glass-panel.location-card:hover {
