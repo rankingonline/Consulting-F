@@ -118,4 +118,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
         stepsObserver.observe(stepsSection);
     }
+
+    /* --- Mobile Menu Logic --- */
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+
+            // Optional: Toggle Hamburger Icon between Bars and Times (X)
+            const icon = hamburger.querySelector('i');
+            if (icon) {
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+
+        // Close Menu Button Logic
+        const closeBtn = navLinks.querySelector('.close-menu-btn');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+
+        // Close menu when clicking a REGULAR link (not dropdown toggles)
+        navLinks.querySelectorAll('a:not(.dropbtn)').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+        // Mobile Accordion Logic
+        const dropdowns = navLinks.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const btn = dropdown.querySelector('.dropbtn');
+            if (btn) {
+                btn.addEventListener('click', (e) => {
+                    // Only apply accordion behavior on mobile (screen < 900px)
+                    if (window.innerWidth <= 900) {
+                        e.preventDefault(); // Prevent link navigation
+                        e.stopPropagation(); // Stop menu closing
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
+    }
 });

@@ -2199,3 +2199,340 @@ footer p {
 .dropdown:hover .dropbtn i {
     transform: rotate(180deg);
 }
+
+/* --- RESPONSIVE HEADER & HERO --- */
+
+/* Default Hide for Mobile Elements on Desktop */
+.hamburger-menu,
+.close-menu-btn,
+.mobile-actions {
+    display: none;
+}
+
+.mobile-only-btn {
+    display: none !important;
+}
+
+/* Mobile Actions Container */
+.mobile-actions {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-circle-call {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-500);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(var(--primary-rgb), 0.3);
+    transition: transform 0.2s;
+}
+
+.btn-circle-call:active {
+    transform: scale(0.95);
+}
+
+/* Tablet & Mobile Styles */
+@media (max-width: 900px) {
+    .mobile-actions {
+        display: flex;
+    }
+
+    /* Hamburger Menu Button Style Update */
+    .hamburger-menu {
+        display: flex;
+        /* Ensure it's block within flex container */
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        color: var(--primary-900);
+        cursor: pointer;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s, background 0.2s;
+        padding: 0;
+    }
+
+    .hamburger-menu:active {
+        transform: scale(0.95);
+        background: var(--primary-50);
+    }
+
+    /* Rest of existing media queries... */
+
+    /* Dock Header to Top on Mobile */
+    header {
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    /* Navbar Adjustments */
+    .navbar-glass {
+        padding: 0.8rem 1.5rem;
+        justify-content: space-between;
+        max-width: 100%;
+        /* Full width */
+        border-radius: 0;
+        /* Remove rounded corners */
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: rgba(255, 255, 255, 0.95);
+        /* More opaque */
+    }
+
+    .logo img {
+        height: 40px !important;
+    }
+
+    .desktop-only-btn {
+        display: none !important;
+        /* Hide desktop button */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Mobile Menu Overlay - Initially Hidden */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Start off-screen */
+        width: 100%;
+        height: 100dvh;
+        /* Use dynamic viewport height */
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        justify-content: flex-start;
+        /* Start from top to avoid clipping */
+        align-items: center;
+        /* Center horizontally */
+        gap: 1.5rem;
+        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 1001;
+        /* Behind hamburger, above content */
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        padding: 8rem 2rem 4rem 2rem;
+        /* Large top padding to clear header */
+        margin: 0;
+        overflow-y: auto;
+        /* Allow scrolling if content is tall */
+    }
+
+    /* Restore Active State */
+    .nav-links.active {
+        right: 0;
+    }
+
+    /* Close Button inside Mobile Menu */
+    .close-menu-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--primary-900);
+        width: 44px;
+        height: 44px;
+        display: flex;
+        /* Force flex display on mobile */
+        align-items: center;
+        justify-content: center;
+        background: rgba(var(--primary-rgb), 0.05);
+        border-radius: 50%;
+        transition: background 0.3s;
+    }
+
+    .close-menu-btn:hover,
+    .close-menu-btn:active {
+        background: rgba(var(--primary-rgb), 0.15);
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+        color: var(--primary-900);
+        margin: 0;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        /* Larger touch targets */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        /* Separators */
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    /* Mobile Dropdown Handling override */
+    .dropdown {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* DISABLE HOVER ON MOBILE */
+    .dropdown:hover .dropdown-content {
+        display: none;
+        /* Controlled via JS class */
+    }
+
+    .dropdown-content {
+        position: static;
+        /* Flow naturally in mobile menu */
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        /* No glass effect inside glass menu */
+        transform: none !important;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        /* Default hidden state */
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0 0 0;
+        margin-top: 5px;
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropbtn {
+        font-size: 1.5rem;
+        justify-content: center;
+        width: 100%;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    /* Chevron Icon styles for mobile */
+    .dropbtn i {
+        transition: transform 0.3s ease;
+        transform: rotate(0deg);
+        /* Explicit default state */
+    }
+
+    /* Active State for Mobile Dropdown */
+    .dropdown.active .dropdown-content {
+        display: flex !important;
+        animation: simpleFadeIn 0.3s forwards;
+    }
+
+    /* Ensure only the active state triggers rotation on mobile */
+    .dropdown.active .dropbtn i {
+        transform: rotate(180deg) !important;
+    }
+
+    /* Prevent hover interference on mobile */
+    .dropdown:hover .dropbtn i {
+        transform: rotate(0deg);
+    }
+
+    /* Re-enable active rotation if hovered AND active (unlikely on mobile but consistent) */
+    .dropdown.active:hover .dropbtn i {
+        transform: rotate(180deg) !important;
+    }
+
+    /* Hide bridge and arrows on mobile */
+    .dropdown-content::before,
+    .dropdown-content::after {
+        display: none;
+    }
+
+    .dropdown-content a {
+        font-size: 1.1rem;
+        color: var(--primary-500);
+        padding: 5px;
+        background: transparent !important;
+        /* Remove hover bg on mobile */
+    }
+
+    .mobile-only-btn {
+        display: inline-flex !important;
+        /* Show mobile button */
+        margin-top: 2rem;
+        font-size: 1rem !important;
+        width: auto !important;
+        min-width: 200px;
+        justify-content: center;
+    }
+
+    /* Hero Responsive */
+    .hero {
+        min-height: auto;
+        /* Remove 100vh constraint */
+        padding-top: 140px;
+        /* Space for fixed navbar + extra */
+        padding-bottom: 80px;
+        height: auto;
+        /* Allow content to dictate height */
+        background-attachment: scroll;
+        /* Mobile doesn't like fixed attachment sometimes */
+    }
+
+    .hero-content {
+        padding: 0 1.5rem;
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        /* Smaller H1 */
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 2rem;
+        white-space: normal;
+        /* Allow wrap */
+        display: inline-block;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    .hero .btn-primary {
+        width: 100%;
+        /* Full width button on mobile */
+        max-width: 320px;
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-glass {
+        padding: 0.8rem 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
