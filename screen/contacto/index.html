@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting F - Contacto</title>
+    <meta name="description"
+        content="Contacta con Consulting F. Estamos en Madrid y te atendemos de forma directa y personalizada.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Modern Glass Navbar -->
+    <header>
+        <div class="navbar-glass">
+            <a href="../home/index.html" class="logo">
+                <img src="../../assets/logo-full.svg" alt="Consulting F" style="height: 56px;">
+            </a>
+            <div class="mobile-actions">
+                <a href="tel:+34915360268" class="btn-circle-call">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <div class="close-menu-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <a href="../home/index.html">Inicio</a>
+                <a href="../empresas/index.html">Empresas</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Servicios <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.7em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../servicios/index.html">Servicios</a>
+                        <a href="../servicios/asesoria-fiscal/index.html">Fiscal</a>
+                        <a href="../servicios/asesoria-laboral/index.html">Laboral</a>
+                        <a href="../servicios/asesoria-contable/index.html">Contable</a>
+                        <a href="../servicios/asesoria-juridico/index.html">Juridico</a>
+                    </div>
+                </div>
+                <a href="../nosotros/index.html">Nosotros</a>
+                <a href="#" class="active">Contacto</a>
+                <!-- Mobile Only Button inside Nav -->
+                <a href="#" class="btn b-loop-btn mobile-only-btn">
+                    <i class="fa-solid fa-user"></i> Portal Cliente
+                </a>
+            </nav>
+
+            <a href="#" class="btn b-loop-btn desktop-only-btn">
+                <i class="fa-solid fa-user"></i> Portal Cliente
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Contact Section (Empresas Style) -->
+    <section class="hero-companies">
+        <div class="container hero-companies-grid">
+            <!-- Left Column: Content -->
+            <div class="hero-companies-text">
+                <h1>Hablemos con calma y claridad</h1>
+                <p>Si quieres plantearnos tu caso, solicitar información o concertar una primera reunión, aquí tienes
+                    todas las vías de contacto. Te responderemos lo antes posible.</p>
+                <div class="hero-contact-list">
+                    <div class="hero-contact-item">
+                        <div class="hci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="hci-text">
+                            <strong>Visítanos</strong>
+                            <span>Av. del General Perón, 16, 28020 Madrid</span>
+                        </div>
+                    </div>
+
+                    <a href="tel:+34915360268" class="hero-contact-item">
+                        <div class="hci-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="hci-text">
+                            <strong>Llámanos</strong>
+                            <span>+34 915 36 02 68</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:info@consultingf.com" class="hero-contact-item">
+                        <div class="hci-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="hci-text">
+                            <strong>Escríbenos</strong>
+                            <span>info@consultingf.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="hero-companies-form">
+                <div class="glass-form-card">
+                    <h3>Envíanos un mensaje</h3>
+                    <p class="form-subtitle">Déjanos tus datos y te contactaremos en menos de 24h.</p>
+                    <form class="clean-form">
+                        <div class="form-group-floating">
+                            <input type="text" id="contact-name" placeholder=" " required>
+                            <label for="contact-name">Nombre completo</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <input type="email" id="contact-email" placeholder=" " required>
+                            <label for="contact-email">Correo electrónico</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <input type="tel" id="contact-phone" placeholder=" " required>
+                            <label for="contact-phone">Teléfono</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <textarea id="contact-message" placeholder=" " rows="3"></textarea>
+                            <label for="contact-message">¿En qué podemos ayudarte?</label>
+                        </div>
+                        <div class="form-check" style="margin-bottom: 1.5rem;">
+                            <input type="checkbox" id="privacy-hero" required>
+                            <label for="privacy-hero" style="font-size: 0.85rem;">He leído y acepto la <a href="#"
+                                    style="text-decoration: underline; color: inherit;">Política de
+                                    Privacidad</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-wide">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section (Visual Map - 2 Columns) -->
+    <section class="section-padding bg-light location-section">
+        <div class="container">
+            <div class="location-split-layout">
+                <!-- Left Column (Wrapper): Text + CTA -->
+                <div class="location-text-col">
+                    <div class="loc-text-top">
+                        <span class="section-subtitle"
+                            style="text-align:left; margin:0; display:block; margin-bottom:1rem;">Ubicación</span>
+                        <h2>Dónde puedes encontrarnos</h2>
+                        <p>Nuestras oficinas están en el corazón financiero de Madrid, bien comunicadas y accesibles.
+                        </p>
+                        <p style="margin-top:2rem;">
+                            <strong>Horario de atención:</strong><br>
+                            Lunes a Jueves: 9:00 - 18:00<br>
+                            Viernes: 9:00 - 15:00
+                        </p>
+                    </div>
+
+                    <div class="loc-text-bottom mobile-order-last">
+                        <a href="https://www.google.com/maps/dir//Av.+del+General+Perón,+16,+Tetuán,+28020+Madrid,+Spain/@40.4530387,-3.6946571,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd4228e23705d39f:0x8f7d9e79d8e7e31!2m2!1d-3.6920822!2d40.4530387!3e0?entry=ttu"
+                            target="_blank" class="btn btn-secondary mt-4"
+                            style="background:var(--secondary); color:#fff; border:none; padding: 0.8rem 1.5rem; border-radius:30px; margin-top:1.5rem; display:inline-flex; align-items:center; gap:0.5rem; font-weight:600;">Cómo
+                            llegar <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Map -->
+                <div class="location-map-col">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044557936165!2d-3.6946571234978644!3d40.4530386714336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0x8f7d9e79d8e7e31!2sAv.%20del%20General%20Per%C3%B3n%2C%2016%2C%2028020%20Madrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Split Card) -->
+    <section class="section-padding contact-section" id="contacto-form-bottom">
+        <div class="container">
+            <div class="contact-split-card">
+                <!-- Panel Izquierdo: Info (Fondo Azul) -->
+                <div class="contact-info-panel">
+                    <div class="info-content">
+                        <h3>¿Prefieres escribirnos?</h3>
+                        <p class="info-desc">Si tienes alguna duda específica o quieres que te preparemos un
+                            presupuesto, rellena este formulario y te contestaremos enseguida.</p>
+                        <div class="contact-details-list">
+                            <div class="cd-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>info@consultingf.com</span>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+34 915 36 02 68</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panel Derecho: Formulario (Fondo Blanco) -->
+                <div class="contact-form-panel">
+                    <h2>Formulario de contacto</h2>
+                    <form class="clean-form">
+                        <div class="form-group-line">
+                            <label for="nombre-bottom">Nombre</label>
+                            <input type="text" id="nombre-bottom" required>
+                        </div>
+                        <div class="form-group-line">
+                            <label for="email-bottom">Correo electrónico</label>
+                            <input type="email" id="email-bottom" required>
+                        </div>
+                        <div class="form-group-line">
+                            <label for="telefono-bottom">Teléfono</label>
+                            <input type="tel" id="telefono-bottom" required>
+                        </div>
+                        <div class="form-group-bg">
+                            <label for="mensaje-bottom">Mensaje</label>
+                            <textarea id="mensaje-bottom" rows="4"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="privacy-bottom" required>
+                            <label for="privacy-bottom">He leído y acepto la <a href="#"
+                                    style="text-decoration: underline; color: inherit;">Política de
+                                    Privacidad</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-wide">Enviar formulario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="../../assets/logo-full.svg" alt="Consulting F" class="footer-logo-img">
+                    </a>
+                    <p>Tu socio estratégico en Madrid. Simplificamos la gestión de tu empresa con tecnología y un equipo
+                        humano cercano.</p>
+                    <div class="social-links-footer">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="../servicios/asesoria-fiscal/index.html">Asesoría Fiscal</a></li>
+                        <li><a href="../servicios/asesoria-laboral/index.html">Asesoría Laboral</a></li>
+                        <li><a href="../servicios/asesoria-contable/index.html">Asesoría Contable</a></li>
+                        <li><a href="../servicios/asesoria-juridico/index.html">Consultoría Estratégica</a></li>
+                        <li><a href="#">Portal del Cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="../nosotros/index.html">Nosotros</a></li>
+                        <li><a href="../home/index.html#how-it-works">Cómo trabajamos</a></li>
+                        <li><a href="../contacto/index.html">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Av. del General Perón, 16,<br>28020 Madrid, España
+                        </li>
+                        <li><i class="fa-solid fa-envelope"></i> info@consultingf.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +34 915 36 02 68</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Consulting F. Todos los derechos reservados.</span>
+                <div class="footer-legal">
+                    <a href="#">Aviso Legal</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
