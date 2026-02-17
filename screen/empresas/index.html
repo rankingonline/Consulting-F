@@ -62,12 +62,375 @@
         </div>
     </header>
 
-    <main class="section-padding container">
-        <div style="margin-top: 100px;">
-            <h1>Empresas</h1>
-            <p>Contenido específico para empresas.</p>
+    <!-- Hero Companies Section -->
+    <section class="hero-companies">
+        <div class="container hero-companies-grid">
+            <!-- Left Column: Content -->
+            <div class="hero-companies-text">
+                <h1>Asesoría que responde, te explica y te acompaña</h1>
+                <p>En <strong>Consulting F</strong> ayudamos a empresas a ordenar sus áreas fiscal, laboral y contable
+                    con un enfoque de revisión periódica, comunicación proactiva y soluciones pensadas para el día a día
+                    del negocio.</p>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="hero-companies-form">
+                <div class="glass-form-card">
+                    <h3>Hablemos de tu negocio</h3>
+                    <p class="form-subtitle">Déjanos tus datos y te contactaremos en menos de 24h.</p>
+                    <form class="clean-form">
+                        <div class="form-group-floating">
+                            <input type="text" id="emp-name" placeholder=" " required>
+                            <label for="emp-name">Nombre completo</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <input type="email" id="emp-email" placeholder=" " required>
+                            <label for="emp-email">Correo profesional</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <input type="tel" id="emp-phone" placeholder=" " required>
+                            <label for="emp-phone">Teléfono</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <textarea id="emp-message" placeholder=" " rows="3"></textarea>
+                            <label for="emp-message">¿En qué podemos ayudarte?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-wide">Solicitar propuesta</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Features 360 Section -->
+    <section class="section-padding features-360">
+        <div class="container">
+            <div class="section-header-left">
+                <h2>Visión 360º para tu empresa</h2>
+                <div class="header-line"></div>
+                <p class="section-lead">No solo asesoramos. Te acompañamos en decisiones relevantes.</p>
+                <p class="section-desc">Analizamos tu situación, anticipamos escenarios y actuamos contigo para darte
+                    soporte en cada paso.</p>
+            </div>
+
+            <div class="cards-grid-360">
+                <!-- Card 1 -->
+                <div class="card-360">
+                    <div class="card-360-icon">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <div class="card-360-content">
+                        <h3>Acompañamiento</h3>
+                        <p>Contacto directo y revisiones periódicas reales.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-360">
+                    <div class="card-360-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <div class="card-360-content">
+                        <h3>Análisis adaptado</h3>
+                        <p>Soluciones específicas, no café para todos.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-360">
+                    <div class="card-360-icon">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <div class="card-360-content">
+                        <h3>Confianza a largo plazo</h3>
+                        <p>Una relación estable basada en la cercanía y el criterio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: En qué podemos ayudarte (Needs) - 2 Column Split -->
+    <!-- Section 1: En qué podemos ayudarte (Needs) - Centered Title + 2 Cols -->
+    <section class="section-padding bg-light-alt text-image-split">
+        <div class="container">
+            <h3 class="section-title-sm text-center" style="margin-bottom: 3rem;">En qué podemos ayudarte</h3>
+            <div class="container-split">
+                <!-- Left: Image -->
+                <div class="split-visual">
+                    <div class="visual-placeholder">
+                        <img src="https://placehold.co/600x400/eef0fa/3140b4?text=Imagen+Consultoria"
+                            alt="Placeholder Consultoria" style="width:100%; border-radius: 12px;">
+                    </div>
+                </div>
+
+                <!-- Right: Checklist -->
+                <div class="split-content">
+                    <ul class="check-list-styled">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Alinear las cifras con la realidad del
+                                negocio.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Tomar decisiones fiscales o laborales con
+                                respaldo.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Contar con explicaciones claras, no solo
+                                presentaciones de declaraciones.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Reducir el riesgo de errores por falta de
+                                tiempo o conocimiento.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Sacar partido a herramientas digitales
+                                con acompañamiento.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 2: Cómo trabajamos contigo (Methodology) -->
+    <section class="section-padding">
+        <div class="container">
+            <h3 class="section-title-sm text-center">Cómo trabajamos contigo</h3>
+            <p class="section-subtitle text-center">Nos implicamos en cómo funciona tu empresa para que cada paso tenga
+                sentido.</p>
+
+            <div class="method-grid">
+                <div class="method-item">
+                    <div class="method-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <p>Simulaciones, cierres mensuales y planificación fiscal.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon"><i class="fa-solid fa-gavel"></i></div>
+                    <p>Representación ante la Administración cuando hay requerimientos o procedimientos.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon"><i class="fa-solid fa-comments"></i></div>
+                    <p>Trato directo con profesionales cualificados y respuesta ágil.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <p>Seguimiento mes a mes para evitar sorpresas.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon"><i class="fa-solid fa-users-gear"></i></div>
+                    <p>Automatización de procesos de RRHH y soporte en el área laboral.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <p>Apoyo coordinado en contabilidad, fiscalidad, laboral y área jurídica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Lo que gana tu empresa (Benefits) -->
+    <section class="section-padding bg-light-alt mb-large">
+        <div class="container">
+            <h3 class="section-title-sm text-center">Lo que gana tu empresa</h3>
+
+            <div class="gains-grid">
+                <div class="gain-card">
+                    <div class="gain-marker">01</div>
+                    <h4>Visibilidad total</h4>
+                    <p>Seguimiento continuo de cifras, obligaciones y puntos críticos.</p>
+                </div>
+                <div class="gain-card">
+                    <div class="gain-marker">02</div>
+                    <h4>Proactividad</h4>
+                    <p>Si cambia la normativa o aparece un riesgo, lo vemos a tiempo y actuamos.</p>
+                </div>
+                <div class="gain-card">
+                    <div class="gain-marker">03</div>
+                    <h4>Tecnología con soporte humano</h4>
+                    <p>Herramientas digitales con acompañamiento real, sin quedarte solo con la plataforma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Support Section -->
+    <section class="section-padding international-section">
+        <div class="container international-grid">
+            <div class="international-icon">
+                <i class="fa-solid fa-earth-europe"></i>
+            </div>
+            <div class="international-content">
+                <h2>Soporte internacional</h2>
+                <p>Soporte completo para empresas internacionales que inician o consolidan su actividad en España.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light location-section">
+        <div class="container">
+            <div class="section-header-left">
+                <h2>Dónde puedes encontrarnos</h2>
+                <div class="header-line"></div>
+                <p class="section-desc">Estamos en Madrid. También trabajamos en remoto con empresas de otras
+                    provincias, manteniendo un servicio 100% digital cuando lo necesitas.</p>
+            </div>
+
+            <div class="location-wrapper">
+                <!-- Google Maps Widget Container -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044557936165!2d-3.6946571234978644!3d40.4530386714336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0x8f7d9e79d8e7e31!2sAv.%20del%20General%20Per%C3%B3n%2C%2016%2C%2028020%20Madrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Contact Info Cards -->
+                <div class="contact-cards-row">
+                    <div class="contact-card-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Dirección</h4>
+                        <p>Av. del General Perón, 16, 28020 Madrid</p>
+                    </div>
+                    <div class="contact-card-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Teléfono</h4>
+                        <a href="tel:+34915360268">+34 915 36 02 68</a>
+                    </div>
+                    <div class="contact-card-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:info@consultingf.com">info@consultingf.com</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Split Section -->
+    <section class="section-padding contact-section" id="contacto">
+        <div class="container">
+
+            <div class="contact-split-card">
+
+                <!-- Panel Izquierdo: Info & Mapa (Fondo Azul) -->
+                <div class="contact-info-panel">
+                    <div class="info-content">
+                        <h3>Información de Contacto</h3>
+                        <p class="info-desc">Estamos aquí para ayudarte a optimizar tu negocio. Visítanos o
+                            escríbenos.
+                        </p>
+
+                        <!-- Datos de Contacto -->
+                        <div class="contact-details-list">
+                            <div class="cd-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Av. del General Perón, 16, Tetuán, 28020 Madrid, España</span>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+34 915 36 02 68</span>
+                            </div>
+                            <div class="cd-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>info@consultingf.com</span>
+                            </div>
+                        </div>
+
+                        <!-- Socials -->
+                        <div class="social-row-contact">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel Derecho: Formulario (Fondo Blanco) -->
+                <div class="contact-form-panel">
+                    <h2>Contáctanos</h2>
+
+                    <form class="clean-form">
+                        <div class="form-group-line">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+
+                        <div class="form-group-line">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group-bg">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy">He leído y acepto la <a href="#"
+                                    style="text-decoration: underline; color: inherit;">Política de
+                                    Privacidad</a></label>
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary btn-wide">
+                            Enviar formulario
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="../../assets/logo-full.svg" alt="Consulting F" class="footer-logo-img">
+                    </a>
+                    <p>Tu socio estratégico en Madrid. Simplificamos la gestión de tu empresa con tecnología y un
+                        equipo
+                        humano cercano.</p>
+                    <div class="social-links-footer">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Asesoría Fiscal</a></li>
+                        <li><a href="#">Asesoría Laboral</a></li>
+                        <li><a href="#">Asesoría Contable</a></li>
+                        <li><a href="#">Consultoría Estratégica</a></li>
+                        <li><a href="#">Portal del Cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#beneficios-progreso">Cómo trabajamos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Av. del General Perón, 16,<br>28020 Madrid,
+                            España
+                        </li>
+                        <li><i class="fa-solid fa-envelope"></i> info@consultingf.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +34 915 36 02 68</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Consulting F. Todos los derechos reservados.</span>
+                <div class="footer-legal">
+                    <a href="#">Aviso Legal</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
