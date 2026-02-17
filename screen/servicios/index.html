@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresas - Consulting F</title>
+    <title>Consulting F - Servicios</title>
+    <meta name="description"
+        content="Servicios de Asesoría Fiscal, Laboral, Contable y Jurídica en Madrid. Consulting F te ayuda a gestionar tu negocio.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +20,7 @@
 </head>
 
 <body>
+
     <!-- Modern Glass Navbar -->
     <header>
         <div class="navbar-glass">
@@ -36,21 +40,22 @@
                 <div class="close-menu-btn">
                     <i class="fa-solid fa-xmark"></i>
                 </div>
+                <!-- Updated links relative to screen/servicios/ -->
                 <a href="../home/index.html">Inicio</a>
-                <a href="#" class="active">Empresas</a>
+                <a href="../empresas/index.html">Empresas</a>
                 <div class="dropdown">
-                    <a href="#" class="dropbtn">Servicios <i class="fa-solid fa-chevron-down"
+                    <a href="#" class="dropbtn active">Servicios <i class="fa-solid fa-chevron-down"
                             style="font-size: 0.7em; margin-left: 5px;"></i></a>
                     <div class="dropdown-content">
-                        <a href="../servicios/index.html">Servicios</a>
-                        <a href="#">Fiscal</a>
-                        <a href="#">Laboral</a>
-                        <a href="#">Contable</a>
-                        <a href="#">Juridico</a>
+                        <a href="index.html">Servicios</a>
+                        <a href="asesoria-fiscal/index.html">Fiscal</a>
+                        <a href="asesoria-laboral/index.html">Laboral</a>
+                        <a href="asesoria-contable/index.html">Contable</a>
+                        <a href="asesoria-juridico/index.html">Juridico</a>
                     </div>
                 </div>
-                <a href="../home/index.html#nosotros">Nosotros</a>
-                <a href="../home/index.html#contacto">Contacto</a>
+                <a href="#">Nosotros</a>
+                <a href="#contacto">Contacto</a>
                 <!-- Mobile Only Button inside Nav -->
                 <a href="#" class="btn b-loop-btn mobile-only-btn">
                     <i class="fa-solid fa-user"></i> Portal Cliente
@@ -68,10 +73,12 @@
         <div class="container hero-companies-grid">
             <!-- Left Column: Content -->
             <div class="hero-companies-text">
-                <h1>Asesoría que responde, te explica y te acompaña</h1>
-                <p>En <strong>Consulting F</strong> ayudamos a empresas a ordenar sus áreas fiscal, laboral y contable
-                    con un enfoque de revisión periódica, comunicación proactiva y soluciones pensadas para el día a día
-                    del negocio.</p>
+                <h1>Soluciones claras para la gestión diaria de tu empresa</h1>
+                <p>En <strong>Consulting F</strong> trabajamos con un enfoque integral: fiscal, laboral, contable y
+                    jurídico coordinados para que tengas orden, seguimiento y respuestas cuando las necesitas.
+                    <br><br>Cada servicio puede contratarse de forma independiente, y también como parte de una gestión
+                    centralizada.
+                </p>
             </div>
 
             <!-- Right Column: Form -->
@@ -103,162 +110,148 @@
         </div>
     </section>
 
-    <!-- Features 360 Section -->
-    <section class="section-padding features-360">
-        <div class="container">
-            <div class="section-header-left">
-                <h2>Visión 360º para tu empresa</h2>
-                <div class="header-line"></div>
-                <p class="section-lead">No solo asesoramos. Te acompañamos en decisiones relevantes.</p>
-                <p class="section-desc">Analizamos tu situación, anticipamos escenarios y actuamos contigo para darte
-                    soporte en cada paso.</p>
-            </div>
+    <!-- Detailed Services Grid Section -->
+    <section class="section-padding services-detailed-section">
+        <div class="container services-detailed-grid">
 
-            <div class="cards-grid-360">
-                <!-- Card 1 -->
-                <div class="card-360">
-                    <div class="card-360-icon">
-                        <i class="fa-solid fa-handshake-simple"></i>
+            <!-- Service 1: Fiscal -->
+            <div class="service-detail-card">
+                <div class="service-detail-header">
+                    <div class="service-card-icon">
+                        <i class="fa-solid fa-calculator"></i>
                     </div>
-                    <div class="card-360-content">
-                        <h3>Acompañamiento</h3>
-                        <p>Contacto directo y revisiones periódicas reales.</p>
-                    </div>
+                    <h3>Asesoría fiscal para empresas</h3>
+                </div>
+                <div class="service-detail-desc">
+                    <p>Te acompañamos en la planificación y el cumplimiento fiscal con una idea muy concreta: que
+                        entiendas lo que pasa y puedas decidir con información clara. No se trata solo de presentar
+                        impuestos, sino de anticipar escenarios y evitar sorpresas.</p>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="card-360">
-                    <div class="card-360-icon">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    </div>
-                    <div class="card-360-content">
-                        <h3>Análisis adaptado</h3>
-                        <p>Soluciones específicas, no café para todos.</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card-360">
-                    <div class="card-360-icon">
-                        <i class="fa-solid fa-shield-heart"></i>
-                    </div>
-                    <div class="card-360-content">
-                        <h3>Confianza a largo plazo</h3>
-                        <p>Una relación estable basada en la cercanía y el criterio.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 1: En qué podemos ayudarte (Needs) - 2 Column Split -->
-    <!-- Section 1: En qué podemos ayudarte (Needs) - Centered Title + 2 Cols -->
-    <section class="section-padding bg-light-alt text-image-split">
-        <div class="container">
-            <h3 class="section-title-sm text-center" style="margin-bottom: 3rem;">En qué podemos ayudarte</h3>
-            <div class="container-split">
-                <!-- Left: Image -->
-                <div class="split-visual">
-                    <div class="visual-placeholder">
-                        <img src="https://placehold.co/600x400/eef0fa/3140b4?text=Imagen+Consultoria"
-                            alt="Placeholder Consultoria" style="width:100%; border-radius: 12px;">
-                    </div>
-                </div>
-
-                <!-- Right: Checklist -->
-                <div class="split-content">
-                    <ul class="check-list-styled">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Alinear las cifras con la realidad del
-                                negocio.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Tomar decisiones fiscales o laborales con
-                                respaldo.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Contar con explicaciones claras, no solo
-                                presentaciones de declaraciones.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Reducir el riesgo de errores por falta de
-                                tiempo o conocimiento.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Sacar partido a herramientas digitales
-                                con acompañamiento.</span></li>
+                <div class="service-includes-box">
+                    <h4>Qué incluye</h4>
+                    <ul class="service-includes-list">
+                        <li><i class="fa-solid fa-check"></i> Planificación fiscal y seguimiento periódico durante el
+                            año</li>
+                        <li><i class="fa-solid fa-check"></i> Simulaciones y previsiones para anticipar cierres y
+                            resultados</li>
+                        <li><i class="fa-solid fa-check"></i> Presentación de obligaciones fiscales y revisión de su
+                            coherencia</li>
+                        <li><i class="fa-solid fa-check"></i> Soporte y representación ante la Administración en caso de
+                            requerimientos</li>
                     </ul>
                 </div>
+
+                <div class="service-card-footer">
+                    <a href="asesoria-fiscal/index.html" class="btn-service-link">Ver servicio Fiscal <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
+
+            <!-- Service 2: Laboral -->
+            <div class="service-detail-card">
+                <div class="service-detail-header">
+                    <div class="service-card-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Asesoría laboral</h3>
+                </div>
+                <div class="service-detail-desc">
+                    <p>Gestionamos el área laboral con rigor y agilidad, cuidando tanto el cumplimiento como la
+                        operativa del día a día. Te damos soporte en la gestión recurrente y en momentos sensibles:
+                        cambios, inspecciones, reorganizaciones o necesidades puntuales.</p>
+                </div>
+
+                <div class="service-includes-box">
+                    <h4>Qué incluye</h4>
+                    <ul class="service-includes-list">
+                        <li><i class="fa-solid fa-check"></i> Gestión laboral recurrente: nóminas y seguros sociales
+                        </li>
+                        <li><i class="fa-solid fa-check"></i> Altas, bajas y variaciones con seguimiento y criterio</li>
+                        <li><i class="fa-solid fa-check"></i> Asesoramiento en contratación, bonificaciones y
+                            incidencias</li>
+                        <li><i class="fa-solid fa-check"></i> Soporte en relaciones laborales y acompañamiento ante
+                            inspecciones</li>
+                        <li><i class="fa-solid fa-check"></i> Automatización de procesos de RRHH cuando tiene sentido
+                            para tu empresa</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-footer">
+                    <a href="asesoria-laboral/index.html" class="btn-service-link">Ver servicio Laboral <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service 3: Contable -->
+            <div class="service-detail-card">
+                <div class="service-detail-header">
+                    <div class="service-card-icon">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Asesoría contable para empresas</h3>
+                </div>
+                <div class="service-detail-desc">
+                    <p>La contabilidad no debería ser un “cierre a última hora”. La trabajamos como herramienta de
+                        control: orden, seguimiento y lectura clara para que puedas entender el estado real del negocio
+                        y actuar a tiempo.</p>
+                </div>
+
+                <div class="service-includes-box">
+                    <h4>Qué incluye</h4>
+                    <ul class="service-includes-list">
+                        <li><i class="fa-solid fa-check"></i> Contabilidad al día y revisiones periódicas</li>
+                        <li><i class="fa-solid fa-check"></i> Cierres mensuales y control de desviaciones</li>
+                        <li><i class="fa-solid fa-check"></i> Información contable comprensible para dirección</li>
+                        <li><i class="fa-solid fa-check"></i> Coordinación con fiscalidad para que todo encaje</li>
+                        <li><i class="fa-solid fa-check"></i> Preparación y soporte para auditorías o revisiones cuando
+                            sea necesario</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-footer">
+                    <a href="asesoria-contable/index.html" class="btn-service-link">Ver servicio Contable <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service 4: Jurídico -->
+            <div class="service-detail-card">
+                <div class="service-detail-header">
+                    <div class="service-card-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3>Asesoría jurídica para empresas</h3>
+                </div>
+                <div class="service-detail-desc">
+                    <p>Te damos respaldo jurídico conectado con tu realidad fiscal, laboral y contable. En el día a día,
+                        esto significa resolver dudas con rapidez, revisar documentación con criterio y contar con apoyo
+                        cuando hay decisiones relevantes o situaciones delicadas.</p>
+                </div>
+
+                <div class="service-includes-box">
+                    <h4>Qué incluye</h4>
+                    <ul class="service-includes-list">
+                        <li><i class="fa-solid fa-check"></i> Revisión y redacción de contratos y documentación
+                            mercantil habitual</li>
+                        <li><i class="fa-solid fa-check"></i> Soporte en consultas recurrentes vinculadas a la actividad
+                            de la empresa</li>
+                        <li><i class="fa-solid fa-check"></i> Acompañamiento en procedimientos y requerimientos</li>
+                        <li><i class="fa-solid fa-check"></i> Coordinación con el resto de áreas para evitar riesgos por
+                            falta de visión conjunta</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-footer">
+                    <a href="asesoria-juridico/index.html" class="btn-service-link">Ver servicio Jurídico <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-
-    <!-- Section 2: Cómo trabajamos contigo (Methodology) -->
-    <section class="section-padding">
-        <div class="container">
-            <h3 class="section-title-sm text-center">Cómo trabajamos contigo</h3>
-            <p class="section-subtitle text-center">Nos implicamos en cómo funciona tu empresa para que cada paso tenga
-                sentido.</p>
-
-            <div class="method-grid">
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-calculator"></i></div>
-                    <p>Simulaciones, cierres mensuales y planificación fiscal.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-gavel"></i></div>
-                    <p>Representación ante la Administración cuando hay requerimientos o procedimientos.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-comments"></i></div>
-                    <p>Trato directo con profesionales cualificados y respuesta ágil.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-calendar-check"></i></div>
-                    <p>Seguimiento mes a mes para evitar sorpresas.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-users-gear"></i></div>
-                    <p>Automatización de procesos de RRHH y soporte en el área laboral.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-                    <p>Apoyo coordinado en contabilidad, fiscalidad, laboral y área jurídica.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: Lo que gana tu empresa (Benefits) -->
-    <section class="section-padding bg-light-alt mb-large">
-        <div class="container">
-            <h3 class="section-title-sm text-center">Lo que gana tu empresa</h3>
-
-            <div class="gains-grid">
-                <div class="gain-card">
-                    <div class="gain-marker">01</div>
-                    <h4>Visibilidad total</h4>
-                    <p>Seguimiento continuo de cifras, obligaciones y puntos críticos.</p>
-                </div>
-                <div class="gain-card">
-                    <div class="gain-marker">02</div>
-                    <h4>Proactividad</h4>
-                    <p>Si cambia la normativa o aparece un riesgo, lo vemos a tiempo y actuamos.</p>
-                </div>
-                <div class="gain-card">
-                    <div class="gain-marker">03</div>
-                    <h4>Tecnología con soporte humano</h4>
-                    <p>Herramientas digitales con acompañamiento real, sin quedarte solo con la plataforma.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- International Support Section -->
-    <section class="section-padding international-section">
-        <div class="container international-grid">
-            <div class="international-icon">
-                <i class="fa-solid fa-earth-europe"></i>
-            </div>
-            <div class="international-content">
-                <h2>Soporte internacional</h2>
-                <p>Soporte completo para empresas internacionales que inician o consolidan su actividad en España.</p>
-            </div>
-        </div>
-    </section>
-
+    <!-- Location Section (Imported from Empresas) -->
     <section class="section-padding bg-light location-section">
         <div class="container">
             <div class="section-header-left">
@@ -298,21 +291,15 @@
             </div>
     </section>
 
-    <!-- Contact Split Section -->
+    <!-- Contact Section (Reusing from Home) -->
     <section class="section-padding contact-section" id="contacto">
         <div class="container">
-
             <div class="contact-split-card">
-
                 <!-- Panel Izquierdo: Info & Mapa (Fondo Azul) -->
                 <div class="contact-info-panel">
                     <div class="info-content">
                         <h3>Información de Contacto</h3>
-                        <p class="info-desc">Estamos aquí para ayudarte a optimizar tu negocio. Visítanos o
-                            escríbenos.
-                        </p>
-
-                        <!-- Datos de Contacto -->
+                        <p class="info-desc">Estamos aquí para ayudarte. Contáctanos para más información.</p>
                         <div class="contact-details-list">
                             <div class="cd-item">
                                 <i class="fa-solid fa-location-dot"></i>
@@ -327,50 +314,38 @@
                                 <span>info@consultingf.com</span>
                             </div>
                         </div>
-
-                        <!-- Socials -->
                         <div class="social-row-contact">
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
-
                 <!-- Panel Derecho: Formulario (Fondo Blanco) -->
                 <div class="contact-form-panel">
                     <h2>Contáctanos</h2>
-
                     <form class="clean-form">
                         <div class="form-group-line">
                             <label for="nombre">Nombre</label>
                             <input type="text" id="nombre" required>
                         </div>
-
                         <div class="form-group-line">
                             <label for="email">Correo electrónico</label>
                             <input type="email" id="email" required>
                         </div>
-
                         <div class="form-group-bg">
                             <label for="mensaje">Mensaje</label>
                             <textarea id="mensaje" rows="4"></textarea>
                         </div>
-
                         <div class="form-check">
                             <input type="checkbox" id="privacy" required>
                             <label for="privacy">He leído y acepto la <a href="#"
                                     style="text-decoration: underline; color: inherit;">Política de
                                     Privacidad</a></label>
                         </div>
-
-                        <button type="submit" class="btn btn-secondary btn-wide">
-                            Enviar formulario
-                        </button>
+                        <button type="submit" class="btn btn-secondary btn-wide">Enviar formulario</button>
                     </form>
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -382,8 +357,7 @@
                     <a href="#" class="footer-logo">
                         <img src="../../assets/logo-full.svg" alt="Consulting F" class="footer-logo-img">
                     </a>
-                    <p>Tu socio estratégico en Madrid. Simplificamos la gestión de tu empresa con tecnología y un
-                        equipo
+                    <p>Tu socio estratégico en Madrid. Simplificamos la gestión de tu empresa con tecnología y un equipo
                         humano cercano.</p>
                     <div class="social-links-footer">
                         <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -394,18 +368,18 @@
                 <div class="footer-links">
                     <h4>Servicios</h4>
                     <ul>
-                        <li><a href="#">Asesoría Fiscal</a></li>
-                        <li><a href="#">Asesoría Laboral</a></li>
-                        <li><a href="#">Asesoría Contable</a></li>
-                        <li><a href="#">Consultoría Estratégica</a></li>
+                        <li><a href="asesoria-fiscal/index.html">Asesoría Fiscal</a></li>
+                        <li><a href="asesoria-laboral/index.html">Asesoría Laboral</a></li>
+                        <li><a href="asesoria-contable/index.html">Asesoría Contable</a></li>
+                        <li><a href="asesoria-juridico/index.html">Consultoría Estratégica</a></li>
                         <li><a href="#">Portal del Cliente</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#beneficios-progreso">Cómo trabajamos</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Cómo trabajamos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Trabaja con nosotros</a></li>
@@ -414,8 +388,7 @@
                 <div class="footer-links">
                     <h4>Contacto</h4>
                     <ul class="footer-contact-list">
-                        <li><i class="fa-solid fa-location-dot"></i> Av. del General Perón, 16,<br>28020 Madrid,
-                            España
+                        <li><i class="fa-solid fa-location-dot"></i> Av. del General Perón, 16,<br>28020 Madrid, España
                         </li>
                         <li><i class="fa-solid fa-envelope"></i> info@consultingf.com</li>
                         <li><i class="fa-solid fa-phone"></i> +34 915 36 02 68</li>
