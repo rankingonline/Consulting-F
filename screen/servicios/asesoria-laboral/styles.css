@@ -1,0 +1,9 @@
+/* Specific styling for Laboral Service Page */
+.hero-service {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 180px 0 100px;
+    text-align: center;
+}
+
+/* reuse common styles or add specific ones */

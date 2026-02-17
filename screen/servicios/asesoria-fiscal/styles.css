@@ -1,0 +1,18 @@
+/* Specific styling for Fiscal Service Page - Inherits from Home CSS */
+.hero-service {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 180px 0 100px;
+    text-align: center;
+}
+
+.hero-subtitle {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Add more service-specific styles here */
