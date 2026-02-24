@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoría Contable - Consulting F</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Se asume que habrán estilos base y específicos -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Modern Glass Navbar -->
+    <header>
+        <div class="navbar-glass">
+            <a href="../home/index.html" class="logo">
+                <img src="../../assets/logo-full.svg" alt="Consulting F" style="height: 56px;">
+            </a>
+            <div class="mobile-actions">
+                <a href="tel:+34915360268" class="btn-circle-call">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <div class="close-menu-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <a href="../home/index.html">Inicio</a>
+                <a href="../empresas/index.html">Empresas</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Servicios <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.7em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../servicios/index.html">Servicios</a>
+                        <a href="#">Fiscal</a>
+                        <a href="#">Laboral</a>
+                        <a href="#" class="active">Contable</a>
+                        <a href="#">Juridico</a>
+                    </div>
+                </div>
+                <a href="../nosotros/index.html">Nosotros</a>
+                <a href="../contacto/index.html">Contacto</a>
+                <!-- Mobile Only Button inside Nav -->
+                <a href="#" class="btn b-loop-btn mobile-only-btn">
+                    <i class="fa-solid fa-user"></i> Portal Cliente
+                </a>
+            </nav>
+
+            <a href="#" class="btn b-loop-btn desktop-only-btn">
+                <i class="fa-solid fa-user"></i> Portal Cliente
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-companies">
+        <div class="container hero-companies-grid">
+            <!-- Left Column: Content -->
+            <div class="hero-companies-text">
+                <h1>Asesoría Contable que responde, te explica y te acompaña</h1>
+                <p>En <strong>Consulting F</strong> transformamos tus números en información útil para la toma de
+                    decisiones. Llevamos al día tu contabilidad para que puedas centrarte en hacer crecer tu negocio.
+                </p>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="hero-companies-form">
+                <div class="glass-form-card">
+                    <h3>¿Hablamos sobre tu contabilidad?</h3>
+                    <p class="form-subtitle">Déjanos tus datos y te contactaremos en menos de 24h.</p>
+                    <form class="clean-form">
+                        <div class="form-group-floating">
+                            <input type="text" id="emp-name" placeholder=" " required>
+                            <label for="emp-name">Nombre completo</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <input type="email" id="emp-email" placeholder=" " required>
+                            <label for="emp-email">Correo profesional</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <input type="tel" id="emp-phone" placeholder=" " required>
+                            <label for="emp-phone">Teléfono</label>
+                        </div>
+                        <div class="form-group-floating">
+                            <textarea id="emp-message" placeholder=" " rows="3"></textarea>
+                            <label for="emp-message">¿En qué podemos ayudarte?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-wide">Solicitar propuesta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Placeholder -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title-sm text-center">Nuestros Servicios Contables</h2>
+            <p class="text-center">Próximamente más contenido detallado sobre nuestros servicios de contabilidad.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="../../assets/logo-full.svg" alt="Consulting F" class="footer-logo-img">
+                    </a>
+                    <p>Tu socio estratégico en Madrid. Simplificamos la gestión de tu empresa con tecnología y un
+                        equipo
+                        humano cercano.</p>
+                    <div class="social-links-footer">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Asesoría Fiscal</a></li>
+                        <li><a href="#">Asesoría Laboral</a></li>
+                        <li><a href="#">Asesoría Contable</a></li>
+                        <li><a href="#">Consultoría Estratégica</a></li>
+                        <li><a href="#">Portal del Cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="../nosotros/index.html">Nosotros</a></li>
+                        <li><a href="#">Cómo trabajamos</a></li>
+                        <li><a href="../contacto/index.html">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Av. del General Perón, 16,<br>28020 Madrid,
+                            España
+                        </li>
+                        <li><i class="fa-solid fa-envelope"></i> info@consultingf.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +34 915 36 02 68</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Consulting F. Todos los derechos reservados.</span>
+                <div class="footer-legal">
+                    <a href="#">Aviso Legal</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
