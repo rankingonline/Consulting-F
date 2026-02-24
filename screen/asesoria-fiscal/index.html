@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresas - Consulting F</title>
+    <title>Asesoría Fiscal - Consulting F</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Se asume que habrán estilos base y específicos -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -37,13 +38,13 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <a href="../home/index.html">Inicio</a>
-                <a href="#" class="active">Empresas</a>
+                <a href="../empresas/index.html">Empresas</a>
                 <div class="dropdown">
                     <a href="#" class="dropbtn">Servicios <i class="fa-solid fa-chevron-down"
                             style="font-size: 0.7em; margin-left: 5px;"></i></a>
                     <div class="dropdown-content">
                         <a href="../servicios/index.html">Servicios</a>
-                        <a href="../asesoria-fiscal/index.html">Fiscal</a>
+                        <a href="#" class="active">Fiscal</a>
                         <a href="#">Laboral</a>
                         <a href="../asesoria-contable/index.html">Contable</a>
                         <a href="#">Juridico</a>
@@ -63,21 +64,22 @@
         </div>
     </header>
 
-    <!-- Hero Companies Section -->
+    <!-- Hero Section -->
     <section class="hero-companies">
         <div class="container hero-companies-grid">
             <!-- Left Column: Content -->
             <div class="hero-companies-text">
-                <h1>Asesoría que responde, te explica y te acompaña</h1>
-                <p>En <strong>Consulting F</strong> ayudamos a empresas a ordenar sus áreas fiscal, laboral y contable
-                    con un enfoque de revisión periódica, comunicación proactiva y soluciones pensadas para el día a día
-                    del negocio.</p>
+                <span class="hero-subtitle">Asesoría contable para empresas</span>
+                <h1>Contabilidad al día, con revisiones reales y lectura clara para dirección</h1>
+                <p>La contabilidad no debería ser un cierre a última hora. En Consulting F la trabajamos como
+                    herramienta de control: orden, seguimiento y una visión comprensible para que sepas qué está pasando
+                    en el negocio y actúes a tiempo.</p>
             </div>
 
             <!-- Right Column: Form -->
             <div class="hero-companies-form">
                 <div class="glass-form-card">
-                    <h3>Hablemos de tu negocio</h3>
+                    <h2 style="text-align: center;">Agenda tu reunión inicial</h2>
                     <p class="form-subtitle">Déjanos tus datos y te contactaremos en menos de 24h.</p>
                     <form class="clean-form">
                         <div class="form-group-floating">
@@ -96,206 +98,148 @@
                             <textarea id="emp-message" placeholder=" " rows="3"></textarea>
                             <label for="emp-message">¿En qué podemos ayudarte?</label>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-wide">Solicitar propuesta</button>
+                        <button type="submit" class="btn btn-primary btn-wide">Agendar reunión</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features 360 Section -->
-    <section class="section-padding features-360">
+    <section class="section-padding bg-light-alt">
         <div class="container">
-            <div class="section-header-left">
-                <h2>Visión 360º para tu empresa</h2>
-                <div class="header-line"></div>
-                <p class="section-lead">No solo asesoramos. Te acompañamos en decisiones relevantes.</p>
-                <p class="section-desc">Analizamos tu situación, anticipamos escenarios y actuamos contigo para darte
-                    soporte en cada paso.</p>
-            </div>
+            <h2 class="section-title-sm text-center" style="margin-bottom: 1.5rem;">Visión 360º: Contabilidad conectada
+                con fiscal y laboral</h2>
+            <p class="text-center" style="max-width: 900px; margin: 0 auto 4rem; font-size: 1.1rem; color: #555;">
+                Cuando la contabilidad va por un lado y los impuestos por otro, aparecen sustos. Aquí conectamos la
+                parte contable con la fiscal y la laboral para que todo encaje y tengas una imagen coherente del mes y
+                del año.
+            </p>
 
-            <div class="cards-grid-360">
-                <!-- Card 1 -->
-                <div class="card-360">
-                    <div class="card-360-icon">
-                        <i class="fa-solid fa-handshake-simple"></i>
-                    </div>
-                    <div class="card-360-content">
-                        <h3>Acompañamiento</h3>
-                        <p>Contacto directo y revisiones periódicas reales.</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card-360">
-                    <div class="card-360-icon">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    </div>
-                    <div class="card-360-content">
-                        <h3>Análisis adaptado</h3>
-                        <p>Soluciones específicas, no café para todos.</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card-360">
-                    <div class="card-360-icon">
-                        <i class="fa-solid fa-shield-heart"></i>
-                    </div>
-                    <div class="card-360-content">
-                        <h3>Confianza a largo plazo</h3>
-                        <p>Una relación estable basada en la cercanía y el criterio.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 1: En qué podemos ayudarte (Needs) - 2 Column Split -->
-    <!-- Section 1: En qué podemos ayudarte (Needs) - Centered Title + 2 Cols -->
-    <section class="section-padding bg-light-alt text-image-split">
-        <div class="container">
-            <h3 class="section-title-sm text-center" style="margin-bottom: 3rem;">En qué podemos ayudarte</h3>
-            <div class="container-split">
-                <!-- Left: Image -->
-                <div class="split-visual">
-                    <div class="visual-placeholder">
-                        <img src="https://placehold.co/600x400/eef0fa/3140b4?text=Imagen+Consultoria"
-                            alt="Placeholder Consultoria" style="width:100%; border-radius: 12px;">
-                    </div>
-                </div>
-
-                <!-- Right: Checklist -->
+            <div class="container-split" style="gap: 4rem; align-items: start;">
+                <!-- Left: Para quién es -->
                 <div class="split-content">
-                    <ul class="check-list-styled">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Alinear las cifras con la realidad del
-                                negocio.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Tomar decisiones fiscales o laborales con
-                                respaldo.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Contar con explicaciones claras, no solo
-                                presentaciones de declaraciones.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Reducir el riesgo de errores por falta de
-                                tiempo o conocimiento.</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Sacar partido a herramientas digitales
-                                con acompañamiento.</span></li>
-                    </ul>
+                    <h3 style="margin-bottom: 2rem; color: var(--primary-900);">Para quién es</h3>
+                    <div class="pain-list">
+                        <div class="pain-card-mini">
+                            <i class="fa-solid fa-building"></i>
+                            <p>Pymes que quieren orden y seguimiento, no solo apuntes.</p>
+                        </div>
+                        <div class="pain-card-mini">
+                            <i class="fa-solid fa-laptop-file"></i>
+                            <p>Empresas que trabajan con A3 (A3 Factura) y quieren acompañamiento.</p>
+                        </div>
+                        <div class="pain-card-mini">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <p>Dirección que necesita explicaciones claras, no solo listados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Qué incluye -->
+                <div class="split-content">
+                    <h3 style="margin-bottom: 2rem; color: var(--primary-900);">Qué incluye</h3>
+                    <div class="pain-list">
+                        <div class="pain-card-mini"
+                            style="background: rgba(255,255,255,0.7); border-color: var(--primary-300);">
+                            <i class="fa-solid fa-check" style="color: var(--primary-600);"></i>
+                            <p><strong>Contabilidad al día</strong> y revisiones periódicas.</p>
+                        </div>
+                        <div class="pain-card-mini"
+                            style="background: rgba(255,255,255,0.7); border-color: var(--primary-300);">
+                            <i class="fa-solid fa-check" style="color: var(--primary-600);"></i>
+                            <p><strong>Cierres mensuales</strong> y control de desviaciones.</p>
+                        </div>
+                        <div class="pain-card-mini"
+                            style="background: rgba(255,255,255,0.7); border-color: var(--primary-300);">
+                            <i class="fa-solid fa-check" style="color: var(--primary-600);"></i>
+                            <p><strong>Información contable comprensible</strong> para dirección (qué está pasando y por
+                                qué).</p>
+                        </div>
+                        <div class="pain-card-mini"
+                            style="background: rgba(255,255,255,0.7); border-color: var(--primary-300);">
+                            <i class="fa-solid fa-check" style="color: var(--primary-600);"></i>
+                            <p><strong>Coordinación con fiscalidad</strong> para que todo encaje.</p>
+                        </div>
+                        <div class="pain-card-mini"
+                            style="background: rgba(255,255,255,0.7); border-color: var(--primary-300);">
+                            <i class="fa-solid fa-check" style="color: var(--primary-600);"></i>
+                            <p><strong>Preparación y soporte</strong> ante auditorías o revisiones cuando sea necesario.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Section 2: Cómo trabajamos contigo (Methodology) -->
+    <!-- Section: Cómo trabajamos contigo (Methodology) -->
     <section class="section-padding">
         <div class="container">
-            <h3 class="section-title-sm text-center">Cómo trabajamos contigo</h3>
-            <p class="section-subtitle text-center">Nos implicamos en cómo funciona tu empresa para que cada paso tenga
-                sentido.</p>
+            <h2 class="section-title-sm text-center">Cómo trabajamos contigo</h2>
 
-            <div class="method-grid">
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-calculator"></i></div>
-                    <p>Simulaciones, cierres mensuales y planificación fiscal.</p>
+            <div class="method-grid" style="margin-top: 3rem;">
+                <div class="method-item"
+                    style="display: flex; flex-direction: column; align-items:flex-start; text-align: left;">
+                    <div class="method-icon"><i class="fa-solid fa-folder-open"></i></div>
+                    <div style="text-align: left;">
+                        <h4 style="margin-bottom: 0.5rem;">1) Puesta en orden y contexto</h4>
+                        <p style="margin: 0;">Entendemos cómo se mueve tu empresa: facturación, gastos, periodicidad,
+                            equipos y herramientas.</p>
+                    </div>
                 </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-gavel"></i></div>
-                    <p>Representación ante la Administración cuando hay requerimientos o procedimientos.</p>
+                <div class="method-item"
+                    style="display: flex; flex-direction: column; align-items:flex-start; text-align: left;">
+                    <div class="method-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <div style="text-align: left;">
+                        <h4 style="margin-bottom: 0.5rem;">2) Seguimiento mensual</h4>
+                        <p style="margin: 0;">Revisiones, control de desviaciones y alertas cuando algo se sale de lo
+                            normal.</p>
+                    </div>
                 </div>
-                <div class="method-item">
+                <div class="method-item"
+                    style="display: flex; flex-direction: column; align-items:flex-start; text-align: left;">
+                    <div class="method-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <div style="text-align: left;">
+                        <h4 style="margin-bottom: 0.5rem;">3) Coordinación con fiscal</h4>
+                        <p style="margin: 0;">Contabilidad y fiscalidad alineadas para evitar contradicciones y
+                            sorpresas.</p>
+                    </div>
+                </div>
+                <div class="method-item"
+                    style="display: flex; flex-direction: column; align-items:flex-start; text-align: left;">
                     <div class="method-icon"><i class="fa-solid fa-comments"></i></div>
-                    <p>Trato directo con profesionales cualificados y respuesta ágil.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-calendar-check"></i></div>
-                    <p>Seguimiento mes a mes para evitar sorpresas.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-users-gear"></i></div>
-                    <p>Automatización de procesos de RRHH y soporte en el área laboral.</p>
-                </div>
-                <div class="method-item">
-                    <div class="method-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-                    <p>Apoyo coordinado en contabilidad, fiscalidad, laboral y área jurídica.</p>
+                    <div style="text-align: left;">
+                        <h4 style="margin-bottom: 0.5rem;">4) Trato directo y respuesta ágil</h4>
+                        <p style="margin: 0;">Hablas con profesionales, con criterio y continuidad.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 3: Lo que gana tu empresa (Benefits) -->
+    <!-- Section: Lo que gana tu empresa (Benefits) -->
     <section class="section-padding bg-light-alt mb-large">
         <div class="container">
-            <h3 class="section-title-sm text-center">Lo que gana tu empresa</h3>
+            <h2 class="section-title-sm text-center">Lo que gana tu empresa</h2>
 
-            <div class="gains-grid">
+            <div class="gains-grid" style="margin-top: 3rem;">
                 <div class="gain-card">
-                    <div class="gain-marker">01</div>
-                    <h4>Visibilidad total</h4>
-                    <p>Seguimiento continuo de cifras, obligaciones y puntos críticos.</p>
+                    <div class="gain-marker"><i class="fa-solid fa-eye"></i></div>
+                    <h4>Visibilidad</h4>
+                    <p>Cifras que se entienden y sirven para dirigir.</p>
                 </div>
                 <div class="gain-card">
-                    <div class="gain-marker">02</div>
-                    <h4>Proactividad</h4>
-                    <p>Si cambia la normativa o aparece un riesgo, lo vemos a tiempo y actuamos.</p>
+                    <div class="gain-marker"><i class="fa-solid fa-sliders"></i></div>
+                    <h4>Control</h4>
+                    <p>Cierres mensuales con lectura de desviaciones.</p>
                 </div>
                 <div class="gain-card">
-                    <div class="gain-marker">03</div>
-                    <h4>Tecnología con soporte humano</h4>
-                    <p>Herramientas digitales con acompañamiento real, sin quedarte solo con la plataforma.</p>
+                    <div class="gain-marker"><i class="fa-solid fa-link"></i></div>
+                    <h4>Cohesión</h4>
+                    <p>Contable y fiscal trabajando como un solo equipo.</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- International Support Section -->
-    <section class="section-padding international-section">
-        <div class="container international-grid">
-            <div class="international-icon">
-                <i class="fa-solid fa-earth-europe"></i>
-            </div>
-            <div class="international-content">
-                <h2>Soporte internacional</h2>
-                <p>Soporte completo para empresas internacionales que inician o consolidan su actividad en España.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding bg-light location-section">
-        <div class="container">
-            <div class="section-header-left">
-                <h2>Dónde puedes encontrarnos</h2>
-                <div class="header-line"></div>
-                <p class="section-desc">Estamos en Madrid. También trabajamos en remoto con empresas de otras
-                    provincias, manteniendo un servicio 100% digital cuando lo necesitas.</p>
-            </div>
-
-            <div class="location-wrapper">
-                <!-- Google Maps Widget Container -->
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044557936165!2d-3.6946571234978644!3d40.4530386714336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0x8f7d9e79d8e7e31!2sAv.%20del%20General%20Per%C3%B3n%2C%2016%2C%2028020%20Madrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <!-- Contact Info Cards -->
-                <div class="contact-cards-row">
-                    <div class="contact-card-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h4>Dirección</h4>
-                        <p>Av. del General Perón, 16, 28020 Madrid</p>
-                    </div>
-                    <div class="contact-card-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <h4>Teléfono</h4>
-                        <a href="tel:+34915360268">+34 915 36 02 68</a>
-                    </div>
-                    <div class="contact-card-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <h4>Email</h4>
-                        <a href="mailto:info@consultingf.com">info@consultingf.com</a>
-                    </div>
-                </div>
-            </div>
     </section>
 
     <!-- Contact Split Section -->
@@ -338,7 +282,8 @@
 
                 <!-- Panel Derecho: Formulario (Fondo Blanco) -->
                 <div class="contact-form-panel">
-                    <h2>Contáctanos</h2>
+                    <h2>¿Quieres que revisemos tu situación y te digamos por dónde empezar?</h2>
+                    <p style="margin-bottom: 2rem;">Agenda una reunión inicial de 15 minutos. Sin coste.</p>
 
                     <form class="clean-form">
                         <div class="form-group-line">
@@ -364,11 +309,41 @@
                         </div>
 
                         <button type="submit" class="btn btn-secondary btn-wide">
-                            Enviar formulario
+                            Contactar y agendar llamada
                         </button>
                     </form>
                 </div>
 
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding faq">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="section-title-lg">Preguntas frecuentes sobre nuestro servicio de asesoría contable</h2>
+
+            <!-- Q1 -->
+            <div class="faq-item">
+                <div class="faq-question">¿Trabajáis solo la contabilidad o también fiscal y laboral? <i
+                        class="fa-solid fa-chevron-down"></i></div>
+                <div class="faq-answer">Puedes contratar el servicio contable por separado, o integrarlo en una cuota
+                    mensual conjunta con fiscal y laboral.</div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="faq-item">
+                <div class="faq-question">¿Podemos mantener A3 Factura? <i class="fa-solid fa-chevron-down"></i></div>
+                <div class="faq-answer">Sí. Si ya trabajas con A3, nos adaptamos para que el proceso sea fluido.</div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="faq-item">
+                <div class="faq-question">¿Cuándo tiene sentido pasar a un servicio integral? <i
+                        class="fa-solid fa-chevron-down"></i></div>
+                <div class="faq-answer">Cuando quieres coordinación real entre áreas y un seguimiento continuo, no solo
+                    cumplir plazos.</div>
             </div>
 
         </div>
@@ -396,7 +371,7 @@
                     <ul>
                         <li><a href="../asesoria-fiscal/index.html">Asesoría Fiscal</a></li>
                         <li><a href="#">Asesoría Laboral</a></li>
-                        <li><a href="../asesoria-contable/index.html">Asesoría Contable</a></li>
+                        <li><a href="#">Asesoría Contable</a></li>
                         <li><a href="#">Consultoría Estratégica</a></li>
                         <li><a href="#">Portal del Cliente</a></li>
                     </ul>
@@ -404,8 +379,8 @@
                 <div class="footer-links">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#beneficios-progreso">Cómo trabajamos</a></li>
+                        <li><a href="../nosotros/index.html">Nosotros</a></li>
+                        <li><a href="#">Cómo trabajamos</a></li>
                         <li><a href="../contacto/index.html">Contacto</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Trabaja con nosotros</a></li>
