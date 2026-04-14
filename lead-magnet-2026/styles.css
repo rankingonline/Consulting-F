@@ -927,3 +927,189 @@ header.lm-header .navbar-glass-lm {
         font-size: 1.4rem;
     }
 }
+
+/* =========================================
+   BLOQUE 8 y 9: Cierre Emocional y CTA Final
+========================================= */
+.final-cta-section {
+    padding: 7rem 0;
+    background: var(--primary-900);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background aesthetic element */
+.final-cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30%; left: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.15) 0%, transparent 60%);
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.final-cta-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.final-cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .final-cta-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+.emotional-close h2 {
+    font-size: 2.8rem;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.emotional-text p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.emotional-text p.highlight-p {
+    font-weight: 700;
+    color: var(--secondary-400);
+    font-size: 1.3rem;
+}
+
+/* Especificidad para el formulario del final */
+.final-form-wrapper .lm-form-glass {
+    padding: 3rem;
+}
+
+.form-desc {
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* =========================================
+   FAQ Section - Landing Magnet specific
+========================================= */
+.lm-faq-section {
+    padding: 6rem 0;
+    background: #f8f9fc;
+    border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+.lm-faq-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+}
+
+.lm-faq-header h2 {
+    font-size: 2.4rem;
+    color: var(--primary-900);
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+.lm-faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+    .lm-faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Each FAQ item */
+.lm-faq-item {
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.lm-faq-item:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+    border-color: rgba(var(--primary-rgb), 0.12);
+}
+
+.lm-faq-item[open] {
+    border-color: rgba(var(--primary-rgb), 0.2);
+    box-shadow: 0 8px 30px rgba(var(--primary-rgb), 0.06);
+}
+
+/* Question (summary) */
+.lm-faq-question {
+    cursor: pointer;
+    list-style: none; /* Safari requires this string without marker to stay toggleable if block */
+    transition: background 0.2s ease;
+}
+
+.lm-faq-question-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.4rem 1.6rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--primary-900);
+    line-height: 1.4;
+    text-align: left;
+}
+
+.lm-faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.lm-faq-question::marker {
+    display: none;
+    content: '';
+}
+
+.lm-faq-question:hover {
+    background: rgba(var(--primary-rgb), 0.02);
+}
+
+.lm-faq-chevron {
+    font-size: 0.85rem;
+    color: var(--primary-400);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.lm-faq-item[open] .lm-faq-chevron {
+    transform: rotate(180deg);
+}
+
+/* Answer */
+.lm-faq-answer {
+    padding: 0 1.6rem 1.5rem;
+    display: block !important; /* Force block over global styles */
+}
+
+.lm-faq-answer p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+}
