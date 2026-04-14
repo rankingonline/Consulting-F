@@ -1,0 +1,547 @@
+/* Estilos específicos para Landing Page de Ads */
+
+/* Reset de header global para la landing */
+header.lm-header {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 100;
+}
+
+header.lm-header .navbar-glass-lm {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 15px 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Override de padding para la hero (evitar solapamiento con el header) */
+.hero-content-lm {
+    padding-top: 160px;
+    /* Suficiente espacio libre arriba */
+    padding-bottom: 60px;
+    width: 90%;
+    max-width: 1240px;
+    /* Más ancho para que respire */
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Grilla del Hero: Dos columnas (Texto y Formulario) con buen respiro */
+.hero-lm-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.9fr;
+    /* Columna de texto un poco más ancha */
+    gap: 6rem;
+    align-items: center;
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .hero-lm-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-content-lm {
+        padding-top: 130px;
+    }
+}
+
+/* Título y texto de la hero */
+.hero-text-lm h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    background: none;
+    -webkit-text-fill-color: var(--white);
+}
+
+.hero-text-lm p.subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+/* Lista del Hero con checks dorados que combinan con la Home */
+.hero-check-list {
+    margin-bottom: 2rem;
+}
+
+.hero-check-list .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 1.2rem;
+    font-size: 1.15rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.hero-check-list .check-item i {
+    color: var(--secondary-500);
+    /* Dorado/Secundario de la marca */
+    margin-top: 4px;
+    font-size: 1.2rem;
+}
+
+/* Estilo de Formulario Glass Elegante para el Hero */
+.lm-form-glass {
+    background: rgba(255, 255, 255, 0.08);
+    /* Blanco muy translúcido, más premium que un azul sólido */
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    /* Bordes suaves */
+    padding: 3rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.lm-form-glass h3 {
+    color: var(--white);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Elementos del formulario */
+.lm-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.lm-form-group label {
+    display: block;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.lm-form-group input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    /* Entradas estilo glass */
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.lm-form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.lm-form-group input:focus {
+    outline: none;
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.lm-microcopy {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* =========================================
+   BLOQUE 1: Dolor / Identificación (Compacto)
+========================================= */
+.dolor-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: transparent;
+}
+
+.dolor-compact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .dolor-compact-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+.dolor-text-col h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+    color: var(--primary-900);
+}
+
+.lm-intro-text-compact p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+
+
+.bento-grid-compact .highlight {
+    font-weight: 700;
+    color: var(--primary-900);
+    margin-top: 1.5rem;
+}
+
+.dolor-conclusion {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(var(--primary-rgb), 0.1);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.dolor-conclusion i {
+    font-size: 1.5rem;
+    color: var(--secondary-500);
+    margin-top: 0.2rem;
+}
+
+.dolor-conclusion div {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.dolor-conclusion strong {
+    display: block;
+    color: var(--secondary-600);
+    margin-top: 0.3rem;
+}
+
+/* Grilla Compacta Bento */
+.bento-grid-compact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.bento-item-compact {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 1.2rem 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.bento-item-compact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(var(--primary-rgb), 0.06);
+    border-color: rgba(var(--primary-rgb), 0.1);
+}
+
+.bento-item-compact i {
+    font-size: 1.4rem;
+    color: var(--secondary-600);
+    flex-shrink: 0;
+    width: 30px;
+    text-align: center;
+}
+
+.bento-item-compact p {
+    font-size: 0.95rem;
+    color: var(--primary-900);
+    margin: 0;
+    line-height: 1.45;
+    font-weight: 500;
+}
+
+.bento-span-2 {
+    grid-column: span 2;
+}
+
+.highlight-bento {
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.02), rgba(var(--secondary-rgb), 0.04));
+    border: 1px solid rgba(var(--secondary-rgb), 0.2);
+}
+
+@media (max-width: 600px) {
+    .bento-grid-compact {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-span-2 {
+        grid-column: span 1;
+    }
+}
+
+/* =========================================
+   BLOQUE 2: Qué vas a descubrir (Rediseño)
+========================================= */
+.audit-discover {
+    padding: 5rem 0 4rem;
+    position: relative;
+}
+
+/* Cabecera editorial */
+.audit-header {
+    max-width: 640px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.audit-label {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-500);
+    background: rgba(var(--primary-rgb), 0.06);
+    padding: 6px 18px;
+    border-radius: 30px;
+    margin-bottom: 1.2rem;
+}
+
+.audit-header h2 {
+    font-size: 2.4rem;
+    color: var(--primary-900);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.audit-header p {
+    font-size: 1.1rem;
+    color: #5a6270;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Grilla 2×2 */
+.audit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .audit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tarjeta individual */
+.audit-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 2rem 1.8rem;
+    border-radius: 18px;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.audit-card:hover {
+    box-shadow: 0 12px 36px rgba(var(--primary-rgb), 0.1);
+    transform: translateY(-4px);
+}
+
+/* Icono badge */
+.audit-card-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.08), rgba(var(--primary-rgb), 0.03));
+}
+
+.audit-card-icon i {
+    font-size: 1.25rem;
+    color: var(--primary-600);
+}
+
+/* Variación sutil de accent por card */
+.audit-card:nth-child(2) .audit-card-icon {
+    background: linear-gradient(145deg, rgba(var(--secondary-rgb), 0.1), rgba(var(--secondary-rgb), 0.03));
+}
+
+.audit-card:nth-child(2) .audit-card-icon i {
+    color: var(--secondary-700);
+}
+
+.audit-card:nth-child(3) .audit-card-icon {
+    background: linear-gradient(145deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.03));
+}
+
+.audit-card:nth-child(3) .audit-card-icon i {
+    color: #1e7e34;
+}
+
+.audit-card:nth-child(4) .audit-card-icon {
+    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.1), rgba(var(--secondary-rgb), 0.05));
+}
+
+.audit-card:nth-child(4) .audit-card-icon i {
+    color: var(--primary-500);
+}
+
+/* Cuerpo de la tarjeta */
+.audit-card-body h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-900);
+    margin-bottom: 0.45rem;
+    line-height: 1.3;
+}
+
+.audit-card-body p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CTA row */
+.audit-cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.audit-cta-note {
+    font-size: 0.88rem;
+    color: #8b95a2;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   BLOQUE 3: Beneficio Principal (Dark Mode)
+========================================= */
+.core-benefit-section {
+    background: linear-gradient(135deg, var(--primary-950) 0%, var(--primary-900) 100%);
+    padding: 4rem 0;
+    color: var(--white);
+    position: relative;
+}
+
+/* Brillo de fondo */
+.core-benefit-section::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.15) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.core-container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.core-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    color: var(--white);
+    line-height: 1.2;
+}
+
+/* Pilares "Necesitas..." estilo Glass Pills horizontales */
+.needs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0 auto 2.5rem;
+    align-items: center;
+}
+
+.need-pill {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    /* Forma de pastilla perfecta */
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.95);
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.need-pill:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(var(--secondary-rgb), 0.5);
+}
+
+.need-pill .highlight-word {
+    color: var(--secondary-400);
+    /* Dorado/Secundario brillante */
+    font-weight: 700;
+}
+
+.need-pill i {
+    color: var(--secondary-400);
+}
+
+.core-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 900px;
+}
+
+.core-paragraph strong {
+    color: var(--white);
+    font-weight: 700;
+}

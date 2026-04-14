@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting F - Auditoría Técnica sin coste</title>
+
+    <!-- Google Fonts idénticas a la home -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS de la Home (Core del Glassmorphism y Layout) -->
+    <link rel="stylesheet" href="../screen/home/styles.css">
+
+    <!-- CSS Local (Ajustes de la Landing Page) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER MINIMALISTA FLOTANTE -->
+    <header class="lm-header">
+        <div class="navbar-glass-lm">
+            <a href="#" class="logo">
+                <img src="../assets/logo-full.svg" alt="Consulting F" style="height: 48px;">
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content-lm">
+            <!-- Nuestra grilla para partir en dos (texto izq, formulario der) -->
+            <div class="hero-lm-grid">
+
+                <!-- Columna Izquierda: Copy del Hero -->
+                <div class="hero-text-lm">
+                    <h1>Descubre si tu empresa está perdiendo control, ahorro y tranquilidad</h1>
+
+                    <p class="subtitle">
+                        Solicita una auditoría técnica inicial sin coste y comprueba si estás asumiendo errores en
+                        nóminas, riesgos ante inspecciones o pérdidas de ahorro por falta de revisión y acompañamiento
+                        real.
+                    </p>
+
+                    <!-- Viñetas estructuradas -->
+                    <div class="hero-check-list">
+                        <div class="check-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Detecta fallos que pueden acabar en sanciones o recargos</span>
+                        </div>
+                        <div class="check-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Comprueba si estás dejando escapar ahorro en costes de plantilla</span>
+                        </div>
+                        <div class="check-item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Gana claridad para decidir con más seguridad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Formulario de Contacto en contenedor Glass Premium -->
+                <div class="lm-form-glass">
+                    <h3>Solicitar auditoría sin coste</h3>
+                    <form>
+                        <div class="lm-form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" placeholder="Introduce tu nombre" required>
+                        </div>
+                        <div class="lm-form-group">
+                            <label for="empresa">Nombre de tu empresa</label>
+                            <input type="text" id="empresa" placeholder="Empresa" required>
+                        </div>
+                        <div class="lm-form-group">
+                            <label for="email">Correo electrónico profesional</label>
+                            <input type="email" id="email" placeholder="tu@empresa.com" required>
+                        </div>
+
+                        <!-- Botón CTA Primario del sistema de la Home pero con ancho completo -->
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; margin-top: 15px; font-size: 1.1rem; padding: 18px;">
+                            Solicitar auditoría sin coste
+                        </button>
+
+                        <!-- Microcopy -->
+                        <p class="lm-microcopy">
+                            Revisamos tu situación actual y te indicamos qué errores, riesgos y oportunidades de mejora
+                            hemos detectado.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOQUE 1. DOLOR / IDENTIFICACIÓN -->
+    <section class="section-padding dolor-section" id="dolor">
+        <div class="container">
+
+            <div class="dolor-compact-layout">
+
+                <!-- Columna Izquierda: Intro y Conclusión -->
+                <div class="dolor-text-col">
+                    <span class="audit-label" style="margin-bottom: 1rem;">La Realidad</span>
+                    <h2 class="text-brand-secondary" style="margin-bottom: 1.5rem;">Cuando la asesoría no acompaña, se
+                        nota</h2>
+
+                    <div class="lm-intro-text-compact">
+                        <p>Tu empresa puede estar funcionando e incluso creciendo.</p>
+                        <p>Pero si nadie revisa contigo lo que pasa de verdad, acabas tomando decisiones con información
+                            incompleta.</p>
+                    </div>
+
+                    <div class="dolor-conclusion">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <div>
+                            Si hoy tienes esta sensación, el problema no está en tu empresa.<br>
+                            <strong>Está en el nivel de acompañamiento que recibes.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Bento Grid más compacto -->
+                <div class="bento-grid-compact">
+                    <p class="highlight">Eso suele notarse en el día a día:</p>
+                    <!-- Point 1 (Full row) -->
+                    <div class="bento-item-compact bento-span-2">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <p>Tienes números, pero no una visión clara para decidir.</p>
+                    </div>
+
+                    <!-- Point 2 (Half row) -->
+                    <div class="bento-item-compact">
+                        <i class="fa-solid fa-bell"></i>
+                        <p>Cualquier aviso de la Administración genera preocupación.</p>
+                    </div>
+
+                    <!-- Point 3 (Half row) -->
+                    <div class="bento-item-compact">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>Nadie te explica con claridad qué riesgo asumes.</p>
+                    </div>
+
+                    <!-- Point 4 (Full row) -->
+                    <div class="bento-item-compact bento-span-2">
+                        <i class="fa-solid fa-user-clock"></i>
+                        <p>Sientes que cumplen, pero no se anticipan a los cambios o al mercado.</p>
+                    </div>
+
+                    <!-- Point 5 (Full row) -->
+                    <div class="bento-item-compact bento-span-2 highlight-bento">
+                        <i class="fa-solid fa-arrows-to-circle"></i>
+                        <p>Sabes que algo podría estar mejor, pero no sabes por dónde resolverlo.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOQUE 2. QUÉ CONSIGUES -->
+    <section class="audit-discover" id="beneficios">
+        <div class="container">
+
+            <!-- Cabecera editorial -->
+            <div class="audit-header">
+                <span class="audit-label">La auditoría</span>
+                <h2>Qué vas a descubrir con esta revisión inicial</h2>
+                <p>No entregamos un documento genérico. Revisamos tu situación real y te señalamos con claridad dónde
+                    puede estar escapándose dinero o creciendo un riesgo que nadie te ha contado.</p>
+            </div>
+
+            <!-- Grilla 2×2 de áreas -->
+            <div class="audit-grid">
+
+                <div class="audit-card">
+                    <div class="audit-card-icon">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <div class="audit-card-body">
+                        <h3>Salud laboral</h3>
+                        <p>Revisamos nóminas, estructura de plantilla y si estás aplicando beneficios como retribución
+                            flexible o Ley Beckham.</p>
+                    </div>
+                </div>
+
+                <div class="audit-card">
+                    <div class="audit-card-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <div class="audit-card-body">
+                        <h3>Riesgos ocultos</h3>
+                        <p>Identificamos posibles banderas rojas que podrían derivar en incidencias con Hacienda o
+                            Seguridad Social.</p>
+                    </div>
+                </div>
+
+                <div class="audit-card">
+                    <div class="audit-card-icon">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                    </div>
+                    <div class="audit-card-body">
+                        <h3>Potencial de ahorro</h3>
+                        <p>Valoramos si existe margen de mejora en planificación fiscal y en costes de plantilla.</p>
+                    </div>
+                </div>
+
+                <div class="audit-card">
+                    <div class="audit-card-icon">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <div class="audit-card-body">
+                        <h3>Nivel de acompañamiento</h3>
+                        <p>Comparamos lo que hoy recibes con lo que una consultoría implicada debería aportar a tu
+                            negocio.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="audit-cta-row">
+                <a href="#formulario" class="btn btn-primary" style="font-size: 1.1rem; padding: 16px 38px;">Solicitar
+                    auditoría sin coste</a>
+                <span class="audit-cta-note">Sin compromiso · Resultado en 48 h</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOQUE 3. BENEFICIO PRINCIPAL -->
+    <section class="core-benefit-section" id="beneficio-principal">
+        <div class="container core-container">
+            <h2 class="core-title">No necesitas que solo te lleven papeles</h2>
+
+            <div class="needs-wrapper">
+                <div class="need-pill">
+                    <i class="fa-solid fa-eye highlight-word"></i>
+                    <span>Necesitas <span class="highlight-word">claridad</span> para decidir.</span>
+                </div>
+                <div class="need-pill">
+                    <i class="fa-solid fa-chart-line highlight-word"></i>
+                    <span>Necesitas <span class="highlight-word">control</span> para anticiparte.</span>
+                </div>
+                <div class="need-pill">
+                    <i class="fa-solid fa-users highlight-word"></i>
+                    <span>Necesitas un <span class="highlight-word">equipo que responda</span> cuando hace falta.</span>
+                </div>
+            </div>
+
+            <p class="core-paragraph" style="margin: 0 auto;">
+                En <strong>Consulting F</strong> lo tenemos claro: detrás de cada cifra hay una decisión empresarial.
+                Por eso nuestra propuesta no gira solo en torno al cumplimiento, sino al acompañamiento proactivo, al
+                criterio técnico y a la tranquilidad de saber que alguien está revisando contigo lo importante.
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
