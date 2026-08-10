@@ -1,0 +1,7 @@
+/* Specific styling for Contable Service Page */
+.hero-service {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 180px 0 100px;
+    text-align: center;
+}
